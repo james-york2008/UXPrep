@@ -41,7 +41,11 @@
 
 .d-show {
     opacity: 1;
-    max-height: 100vh;
+    max-height: 200px;
+}
+
+#navList.d-show {
+    padding: 2rem;
 }
 
 @media (min-width: 540px) {
