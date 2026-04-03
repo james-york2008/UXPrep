@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="src/global/css/base.css">
     <link rel="stylesheet" type="text/css" href="src/global/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="src/index/instructions.css">
+    <link rel="stylesheet" type="text/css" href="src/index/tests.css">
 </head>
 <body>
     <main>
@@ -14,7 +16,7 @@
             <nav>
                 <div id="desktopNavWrapper">
                     <div id="mobileNavWrapper">
-                        <a href="index.html"><img src="logo.png" alt="U.X. Prep. Link to home page" loading="lazy" id="uxprepLogo"></a>
+                        <a href="index.html"><img src="images/logo.png" alt="U.X. Prep. Link to home page" loading="lazy" id="uxprepLogo"></a>
                         <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
                     </div>
                     <ul id="navList" class="d-none">
@@ -25,7 +27,21 @@
                 </div>
             </nav>
         </header>
-    
+
+        <section id="instructions">
+            <div id="heroTitle">
+                <div id="heroStackedCotent">
+                    <h1>Sharpen Your Frontend Skills</h1>
+                    <p>Practice frontend development interview questions to ace your next interview</p>
+                </div>
+                <img src="images/heroImage.png" id="desktopHeroImage" alt="">
+           
+            </div>
+
+            <p id="mobileHeroDescription">Practice frontend development interview questions to ace your next interview</p>
+            <img src="images/heroImage.png" id="mobileHeroImage" alt=""><br>
+            <a class="button" href="#">Start Practicing</a>
+        </section>
 
     <script src="src/global/javascript/hamburgerMenu.js"></script>
 </body>
