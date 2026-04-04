@@ -3,7 +3,7 @@
 }
 
 #navList {
-    transition: 0.5s all ease;
+    transition: 0.4s all ease;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -82,12 +82,10 @@
     #desktopNavWrapper {
         font-size: 1.7rem;
     }
-
 }
 
 @media (min-width: 1000px) {        
     #uxprepLogo {
         width: 25vw;
     }
-
 }
