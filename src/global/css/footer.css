@@ -1,0 +1,45 @@
+#legal {
+    background-color: rgba(242, 242, 242, 0.4);
+}
+
+#footerLinks {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    padding: 3rem 0 0;
+}
+
+#pageDescription {
+    padding: 1.5rem 3rem;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.5rem;
+    text-indent: 1.5rem;
+}
+
+#copyrightTag {
+    text-align: end;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 0.5rem 0.5rem;
+}
+
+@media (min-width: 700px) {
+    #pageDescription {
+        width: 50vw;
+        padding: 1.5rem;
+        font-size: 1.3rem;
+    }
+    
+    #footerLinks {
+        justify-content: start;
+        margin: 3rem;
+        font-size: 1.7rem;
+    }
+
+    #copyrightTag {
+        font-size: 1.3rem;
+        margin: 0 1.5rem 1.5rem;
+    }
+}

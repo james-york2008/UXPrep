@@ -3,6 +3,9 @@
     gap: 0.1rem;
     list-style: none;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .test {
@@ -12,7 +15,6 @@
 
 .testImage {
     width: 45vw;
-    border-radius: 20px;
 }
 
 #tests h2 {
@@ -29,6 +31,12 @@
     margin: 1rem;
 }
 
+@media (min-width: 700px) {
+    .testTitle {
+        font-size: 1.3rem;
+    }
+}
+
 @media (min-width: 992px) {
     #testsList {
         gap: 1rem;
@@ -36,6 +44,10 @@
 
     .test {
         width: 22vw;
+    }
+
+    .test:hover {
+        transform: scale(1.1);
     }
 
     .testImage {
@@ -49,5 +61,5 @@
 
     #tests h2 {
         font-size: 2.5rem;
-    }
+    }    
 }
