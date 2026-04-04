@@ -1,0 +1,53 @@
+#testsList {
+    display: flex;
+    gap: 0.1rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.test {
+    width: 45vw;
+    margin-bottom: 2rem;
+}
+
+.testImage {
+    width: 45vw;
+    border-radius: 20px;
+}
+
+#tests h2 {
+    padding: 5rem 0 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.testTitle {
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-align: center;
+    color: black;
+    margin: 1rem;
+}
+
+@media (min-width: 992px) {
+    #testsList {
+        gap: 1rem;
+    }
+
+    .test {
+        width: 22vw;
+    }
+
+    .testImage {
+        width: 22vw;
+    }
+
+    .testTitle {
+        font-size: 1.5rem;
+        margin: 0.3rem;
+    }
+
+    #tests h2 {
+        font-size: 2.5rem;
+    }
+}

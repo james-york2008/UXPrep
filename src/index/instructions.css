@@ -1,6 +1,6 @@
 #instructions {
     text-align: center;
-    background: linear-gradient(to bottom, rgba(70, 120, 180, 0.3) 5%, rgb(242, 242, 242, 0.4) 35%);
+    background: linear-gradient(to bottom, rgba(70, 120, 180, 0.3) 1%, rgb(242, 242, 242, 0.4) 35%);
 }
 
 #instructions h1 {
@@ -13,14 +13,6 @@
 #instructions p {
     color: grey;
     padding: 0 3rem 1rem;
-}
-
-.button {
-    padding: 1rem 2rem;
-    background-color: rgb(25, 150, 200);
-    color: white;
-    border-radius: 10px;
-    font-size: 1.5rem;
 }
 
 #mobileHeroImage {
@@ -46,9 +38,13 @@
         width: 50vw;
     }
 
+    #heroStackedCotent {
+        background: linear-gradient(to right, rgba(70, 120, 180, 0.3) 20%, rgb(242, 242, 242, 0.4) 80%);
+    }
+
     #instructions {
-        background: linear-gradient(to right, rgba(70, 120, 180, 0.3) 20%, rgb(242, 242, 242, 0.4) 50%);
         padding-bottom: 3rem;
+        background: none;
     }
 
     #heroTitle {
