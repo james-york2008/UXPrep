@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="src/global/css/base.css">
     <link rel="stylesheet" type="text/css" href="src/global/css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="src/index/instructions.css">
-    <link rel="stylesheet" type="text/css" href="src/index/tests.css">
+    <link rel="stylesheet" type="text/css" href="src/index/css/instructions.css">
+    <link rel="stylesheet" type="text/css" href="src/index/css/tests.css">
+    <link rel="stylesheet" type="text/css" href="src/global/css/footer.css">
 </head>
 <body>
     <main>
@@ -17,13 +18,13 @@
                 <div id="desktopNavWrapper">
                     <div id="mobileNavWrapper">
                         <a href="index.html"><img src="images/logo.png" alt="U.X. Prep. Link to home page" loading="lazy" id="uxprepLogo"></a>
-                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">☰</button>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">&#9776</button>
                     </div>
                     <ul id="navList" class="d-none">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#tests">Tests</a></li>
                         <li><a href="#legal">Legal</a></li>
-                    </div>
+                    </ul>
                 </div>
             </nav>
         </header>
@@ -82,11 +83,30 @@
                         </a>
                     </article>
                 </li>
+
+                <li>
+                    <article class="test">
+                            <a href="#">
+                            <img src="images/random.png" alt="Link to randomized practice quiz. This quiz combines questions from all of the other listed quizzes" loading="lazy" class="testImage">
+                            <h6 class="testTitle">Random</h6>
+                        </a>
+                    </article>
+                </li>
             </ul>
         </section>
     
 
 
+        <footer id="legal">
+            <ul id="footerLinks">
+                <li><a href="#home">Back To Top</a></li>
+                <li><a href="https://github.com/james-york2008/UXPrep">View Source Code</a></li>
+            </ul>
+
+            <p id="pageDescription">UXPrep is a frontend web development interview practice tool. It focuses on important concepts like accessibility, semantics, and performance.</p>
+
+            <p id="copyrightTag">&copy; 2026 UXPrep. All rights reserved</p>
+        </footer>
 
     <script src="src/global/javascript/hamburgerMenu.js"></script>
 </body>
