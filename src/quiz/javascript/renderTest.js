@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', async() => {
     let allQuestionsAnswered = () => {
         test.questions.forEach(question => {
             let selectedAnswers = document.querySelector(`input[name="${question.id}"]:checked`)
-            if (selectedAnswers === false) {
+            if (!selectedAnswers) {
                 allAnswered = false
             }
         })
