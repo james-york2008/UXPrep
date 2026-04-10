@@ -1,0 +1,471 @@
+{
+    "quizzes": [
+    {
+        "type": "htmlCss",
+        "title": "HTML & CSS",
+        "questions": [
+            {
+            "id": "q1",
+            "question": "What is the primary benefit of using semantic HTML elements instead of generic elements like div or span?",
+            "options": [
+                "Improves accessibility, SEO, and code maintainability",
+                "Reduces file size significantly",
+                "Automatically applies better default styles",
+                "Improves JavaScript execution speed"
+            ],
+            "correctAnswer": "Improves accessibility, SEO, and code maintainability"
+            },
+            {
+            "id": "q2",
+            "question": "Which description best explains the difference between inline, block, and inline-block elements?",
+            "options": [
+                "Inline elements can have width and height, while block elements cannot",
+                "Block elements start on a new line, inline elements flow with text, and inline-block allows sizing while staying inline",
+                "Inline-block elements are deprecated and should not be used",
+                "There is no meaningful difference between them in modern CSS"
+            ],
+            "correctAnswer": "Block elements start on a new line, inline elements flow with text, and inline-block allows sizing while staying inline"
+            },
+            {
+            "id": "q3",
+            "question": "Which statement accurately describes how CSS positioning works?",
+            "options": [
+                "Relative positioning moves an element relative to its parent, while absolute is relative to the viewport",
+                "Relative keeps normal flow, absolute positions relative to the nearest positioned ancestor, fixed stays relative to viewport, and sticky switches between relative and fixed",
+                "Absolute positioning always places elements on top of others and fixed elements scroll normally",
+                "Sticky positioning is no longer supported in modern browsers"
+            ],
+            "correctAnswer": "Relative keeps normal flow, absolute positions relative to the nearest positioned ancestor, fixed stays relative to viewport, and sticky switches between relative and fixed"
+            },
+            {
+            "id": "q4",
+            "question": "When should ARIA attributes be used in a web application?",
+            "options": [
+                "As a replacement for all semantic HTML elements",
+                "Only when native HTML elements do not provide sufficient accessibility",
+                "To improve CSS styling capabilities",
+                "To define responsive breakpoints in HTML"
+            ],
+            "correctAnswer": "Only when native HTML elements do not provide sufficient accessibility"
+            },
+            {
+            "id": "q5",
+            "question": "Why are relative units like rem, em, and percentages often preferred over pixels in CSS?",
+            "options": [
+                "They scale based on context, improving responsiveness and accessibility",
+                "They are processed faster by browsers",
+                "They are required for flexbox layouts",
+                "They prevent layout shifts entirely"
+            ],
+            "correctAnswer": "They scale based on context, improving responsiveness and accessibility"
+            },
+            {
+            "id": "q6",
+            "question": "Which approach to applying CSS is generally preferred in production environments?",
+            "options": [
+                "Inline styles for faster rendering",
+                "Internal stylesheets for better organization",
+                "External stylesheets for maintainability and caching",
+                "Using only !important rules to enforce consistency"
+            ],
+            "correctAnswer": "External stylesheets for maintainability and caching"
+            },
+            {
+            "id": "q7",
+            "question": "Why is overusing !important considered a bad practice in CSS?",
+            "options": [
+                "It prevents CSS from loading properly",
+                "It breaks the cascade and makes styles difficult to maintain and debug",
+                "It reduces browser compatibility",
+                "It disables media queries"
+            ],
+            "correctAnswer": "It breaks the cascade and makes styles difficult to maintain and debug"
+            },
+            {
+            "id": "q8",
+            "question": "How do viewport units like vh and vw differ from percentages in CSS?",
+            "options": [
+                "Viewport units are based on the browser window size, while percentages depend on the parent element",
+                "Percentages are based on the viewport, while vh and vw are fixed values",
+                "They behave identically in all layout contexts",
+                "Viewport units only apply to font sizes"
+            ],
+            "correctAnswer": "Viewport units are based on the browser window size, while percentages depend on the parent element"
+            },
+            {
+            "id": "q9",
+            "question": "What is the key difference between content-box and border-box in the CSS box model?",
+            "options": [
+                "Content-box includes padding and border in the width, while border-box does not",
+                "Border-box includes content, padding, and border within the declared width, while content-box does not",
+                "Content-box is only used in flexbox layouts",
+                "Border-box is deprecated in modern CSS"
+            ],
+            "correctAnswer": "Border-box includes content, padding, and border within the declared width, while content-box does not"
+            },
+            {
+            "id": "q10",
+            "question": "Why is maintaining a proper heading hierarchy (h1 through h6) important in HTML?",
+            "options": [
+                "It only affects visual styling of text",
+                "It improves accessibility, SEO, and provides meaningful document structure",
+                "It is required for CSS grid layouts to function",
+                "It ensures JavaScript event listeners work correctly"
+            ],
+            "correctAnswer": "It improves accessibility, SEO, and provides meaningful document structure"
+            }
+        ]
+    },
+    {
+        "type": "javascript",
+        "title": "JavaScript",
+        "questions": [
+            {
+            "id": "q1",
+            "question": "What is the difference between var, let, and const in JavaScript?",
+            "options": [
+                "var is function-scoped while let and const are block-scoped, and const cannot be reassigned",
+                "All three are block-scoped but const is immutable",
+                "let is global while var and const are local",
+                "const can be reassigned but let cannot"
+            ],
+            "correctAnswer": "var is function-scoped while let and const are block-scoped, and const cannot be reassigned"
+            },
+            {
+            "id": "q2",
+            "question": "What is a closure in JavaScript?",
+            "options": [
+                "A function that has access to its own scope, the outer function’s scope, and the global scope",
+                "A function that only has access to global variables",
+                "A way to stop a function from executing",
+                "A method used to close event listeners"
+            ],
+            "correctAnswer": "A function that has access to its own scope, the outer function’s scope, and the global scope"
+            },
+            {
+            "id": "q3",
+            "question": "What will happen if you try to access a variable before it is declared with let or const?",
+            "options": [
+                "It will return undefined",
+                "It will throw a ReferenceError due to the temporal dead zone",
+                "It will automatically initialize to null",
+                "It will behave the same as var"
+            ],
+            "correctAnswer": "It will throw a ReferenceError due to the temporal dead zone"
+            },
+            {
+            "id": "q4",
+            "question": "What is the difference between == and === in JavaScript?",
+            "options": [
+                "== compares both value and type, while === compares only value",
+                "=== compares both value and type, while == performs type coercion before comparison",
+                "There is no difference between them",
+                "== is deprecated in modern JavaScript"
+            ],
+            "correctAnswer": "=== compares both value and type, while == performs type coercion before comparison"
+            },
+            {
+            "id": "q5",
+            "question": "How does the JavaScript event loop handle asynchronous operations?",
+            "options": [
+                "It executes async code immediately before synchronous code",
+                "It pushes async callbacks to the call stack directly",
+                "It moves completed async tasks from the callback queue to the call stack when it is empty",
+                "It blocks execution until async tasks are finished"
+            ],
+            "correctAnswer": "It moves completed async tasks from the callback queue to the call stack when it is empty"
+            },
+            {
+            "id": "q6",
+            "question": "What is the purpose of the this keyword in JavaScript?",
+            "options": [
+                "It always refers to the global object",
+                "It refers to the object that is currently executing the function",
+                "It refers to the parent function scope",
+                "It always refers to the DOM element"
+            ],
+            "correctAnswer": "It refers to the object that is currently executing the function"
+            },
+            {
+            "id": "q7",
+            "question": "What is the difference between null and undefined in JavaScript?",
+            "options": [
+                "null is an assigned value representing no value, while undefined means a variable has been declared but not assigned",
+                "undefined is an assigned value, while null means not declared",
+                "They are completely interchangeable",
+                "null is automatically assigned by JavaScript in all cases"
+            ],
+            "correctAnswer": "null is an assigned value representing no value, while undefined means a variable has been declared but not assigned"
+            },
+            {
+            "id": "q8",
+            "question": "What does Array.prototype.map do?",
+            "options": [
+                "It modifies the original array directly",
+                "It creates a new array by applying a function to each element",
+                "It filters elements out of an array",
+                "It sorts the array in place"
+            ],
+            "correctAnswer": "It creates a new array by applying a function to each element"
+            },
+            {
+            "id": "q9",
+            "question": "What is the difference between synchronous and asynchronous code execution?",
+            "options": [
+                "Synchronous code runs in parallel while asynchronous code runs sequentially",
+                "Synchronous code blocks execution until complete, while asynchronous code allows other operations to run before completion",
+                "Asynchronous code always runs faster than synchronous code",
+                "There is no difference in JavaScript"
+            ],
+            "correctAnswer": "Synchronous code blocks execution until complete, while asynchronous code allows other operations to run before completion"
+            },
+            {
+            "id": "q10",
+            "question": "What is the purpose of promises in JavaScript?",
+            "options": [
+                "To replace all callbacks in JavaScript",
+                "To handle asynchronous operations and represent a future value or error",
+                "To make synchronous code run faster",
+                "To store data permanently in memory"
+            ],
+            "correctAnswer": "To handle asynchronous operations and represent a future value or error"
+            }
+        ]
+    }, 
+    {
+        "type": "react",
+        "title": "ReactJS",
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is the primary purpose of React hooks?",
+                "options": [
+                    "To replace Redux entirely",
+                    "To allow state and lifecycle features in functional components",
+                    "To improve CSS styling in React apps",
+                    "To enforce class-based component usage"
+                ],
+                "correctAnswer": "To allow state and lifecycle features in functional components"
+            },
+            {
+                "id": "q2",
+                "question": "What is the difference between useState and useReducer?",
+                "options": [
+                    "useState is for global state, useReducer is for local state",
+                    "useReducer is better suited for complex state logic, while useState is simpler",
+                    "useState is asynchronous while useReducer is synchronous",
+                    "There is no difference between them"
+                ],
+                "correctAnswer": "useReducer is better suited for complex state logic, while useState is simpler"
+            },
+            {
+                "id": "q3",
+                "question": "What does the dependency array in useEffect control?",
+                "options": [
+                    "Which components can access the effect",
+                    "When the effect runs based on changes to specified values",
+                    "How many times the component re-renders",
+                    "Whether the component uses state or props"
+                ],
+                "correctAnswer": "When the effect runs based on changes to specified values"
+            },
+            {
+                "id": "q4",
+                "question": "What is the virtual DOM in React?",
+                "options": [
+                    "A direct representation of the real DOM",
+                    "A lightweight copy of the real DOM used to optimize updates",
+                    "A browser API for DOM manipulation",
+                    "A replacement for HTML"
+                ],
+                "correctAnswer": "A lightweight copy of the real DOM used to optimize updates"
+            },
+            {
+                "id": "q5",
+                "question": "Why are keys important when rendering lists in React?",
+                "options": [
+                    "They improve CSS styling",
+                    "They help React identify which elements have changed for efficient re-rendering",
+                    "They allow components to share state",
+                    "They are required for event handling"
+                ],
+                "correctAnswer": "They help React identify which elements have changed for efficient re-rendering"
+            },
+            {
+                "id": "q6",
+                "question": "What is prop drilling in React?",
+                "options": [
+                    "Passing props deeply through multiple components unnecessarily",
+                    "Using props to manage global state",
+                    "A method of optimizing component rendering",
+                    "A way to fetch data from APIs"
+                ],
+                "correctAnswer": "Passing props deeply through multiple components unnecessarily"
+            },
+            {
+                "id": "q7",
+                "question": "What is the purpose of React.memo?",
+                "options": [
+                    "To memoize values inside a component",
+                    "To prevent unnecessary re-renders of functional components based on props",
+                    "To manage side effects",
+                    "To handle asynchronous code"
+                ],
+                "correctAnswer": "To prevent unnecessary re-renders of functional components based on props"
+            },
+            {
+                "id": "q8",
+                "question": "What is the difference between controlled and uncontrolled components?",
+                "options": [
+                    "Controlled components manage state internally, uncontrolled rely on Redux",
+                    "Controlled components use React state, uncontrolled components rely on the DOM",
+                    "Uncontrolled components are deprecated",
+                    "There is no difference"
+                ],
+                "correctAnswer": "Controlled components use React state, uncontrolled components rely on the DOM"
+            },
+            {
+                "id": "q9",
+                "question": "What does useContext help avoid?",
+                "options": [
+                    "Using hooks in functional components",
+                    "Prop drilling by providing a way to share values across components",
+                    "Component re-renders entirely",
+                    "Using external libraries"
+                ],
+                "correctAnswer": "Prop drilling by providing a way to share values across components"
+            },
+            {
+                "id": "q10",
+                "question": "What is the main benefit of code splitting in React?",
+                "options": [
+                    "It reduces the number of components",
+                    "It improves performance by loading code only when needed",
+                    "It eliminates the need for state management",
+                    "It simplifies JSX syntax"
+                ],
+                "correctAnswer": "It improves performance by loading code only when needed"
+            }
+        ]
+    },
+    {
+        "type": "accessibility",
+        "title": "Accessibility (a11y)",
+        "description": "Advanced accessibility questions covering inclusive design, ARIA usage, keyboard navigation, screen readers, and WCAG best practices.",
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is the primary goal of web accessibility?",
+                "options": [
+                    "To make websites visually appealing",
+                    "To ensure websites are usable by people with disabilities",
+                    "To improve website performance",
+                    "To reduce development time"
+                ],
+                "correctAnswer": "To ensure websites are usable by people with disabilities"
+            },
+            {
+                "id": "q2",
+                "question": "What does WCAG stand for?",
+                "options": [
+                    "Web Content Accessibility Guidelines",
+                    "Web Compliance and Accessibility Guide",
+                    "Worldwide Content Accessibility Group",
+                    "Web Coding Accessibility Guidelines"
+                ],
+                "correctAnswer": "Web Content Accessibility Guidelines"
+            },
+            {
+                "id": "q3",
+                "question": "When should ARIA roles and attributes be used?",
+                "options": [
+                    "Always, instead of semantic HTML",
+                    "Only when native HTML elements do not provide sufficient accessibility",
+                    "Only for styling purposes",
+                    "Only in JavaScript frameworks"
+                ],
+                "correctAnswer": "Only when native HTML elements do not provide sufficient accessibility"
+            },
+            {
+                "id": "q4",
+                "question": "What is the purpose of the alt attribute on images?",
+                "options": [
+                    "To improve image loading speed",
+                    "To provide alternative text for screen readers and when images fail to load",
+                    "To style images with CSS",
+                    "To define image dimensions"
+                ],
+                "correctAnswer": "To provide alternative text for screen readers and when images fail to load"
+            },
+            {
+                "id": "q5",
+                "question": "Why is keyboard accessibility important?",
+                "options": [
+                    "It improves SEO rankings",
+                    "Some users rely on keyboards or assistive technologies instead of a mouse",
+                    "It makes animations smoother",
+                    "It reduces page load time"
+                ],
+                "correctAnswer": "Some users rely on keyboards or assistive technologies instead of a mouse"
+            },
+            {
+                "id": "q6",
+                "question": "What is a common issue with using only color to convey information?",
+                "options": [
+                    "It increases file size",
+                    "It can make content inaccessible to users with color vision deficiencies",
+                    "It slows down rendering",
+                    "It breaks responsive layouts"
+                ],
+                "correctAnswer": "It can make content inaccessible to users with color vision deficiencies"
+            },
+            {
+                "id": "q7",
+                "question": "What does 'focus' refer to in web accessibility?",
+                "options": [
+                    "The currently visible section of a page",
+                    "The element currently selected for keyboard interaction",
+                    "The main heading of the page",
+                    "The element with the highest z-index"
+                ],
+                "correctAnswer": "The element currently selected for keyboard interaction"
+            },
+            {
+                "id": "q8",
+                "question": "Which practice improves accessibility for form inputs?",
+                "options": [
+                    "Using placeholder text instead of labels",
+                    "Associating labels explicitly with form controls",
+                    "Removing all validation messages",
+                    "Using only icons without text"
+                ],
+                "correctAnswer": "Associating labels explicitly with form controls"
+            },
+            {
+                "id": "q9",
+                "question": "What is the purpose of skip navigation links?",
+                "options": [
+                    "To skip loading JavaScript files",
+                    "To allow users to bypass repetitive navigation and jump to main content",
+                    "To improve animation performance",
+                    "To hide navigation menus"
+                ],
+                "correctAnswer": "To allow users to bypass repetitive navigation and jump to main content"
+            },
+            {
+                "id": "q10",
+                "question": "What does a sufficient color contrast ratio ensure?",
+                "options": [
+                    "Faster rendering times",
+                    "Better visibility and readability for users, including those with visual impairments",
+                    "Improved JavaScript execution",
+                    "Consistent layout spacing"
+                ],
+                "correctAnswer": "Better visibility and readability for users, including those with visual impairments"
+            }
+        ]
+    }
+
+  ]
+}
+

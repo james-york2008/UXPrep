@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practice frontend development interview questions to ace your next interview">
+    <title>UXPrep quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/global/css/base.css">
+    <link rel="stylesheet" type="text/css" href="src/global/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="src/quiz/css/test.css">
+
+    <link rel="stylesheet" type="text/css" href="src/global/css/footer.css">
+</head>
+<body>
+    <main>
+        <header id="home">
+            <nav>
+                <div id="desktopNavWrapper">
+                    <div id="mobileNavWrapper">
+                        <a href="index.html"><img src="images/logo.png" alt="U.X. Prep. Link to home page" loading="lazy" id="uxprepLogo"></a>
+                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">&#9776</button>
+                    </div>
+                    <ul id="navList" class="d-none">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#test">Test</a></li>
+                        <li><a href="#legal">Legal</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section id="test">
+            <form>
+                <p id="testType"></p>
+
+                <div id="questionsContainer">
+                </div>
+
+                <button type="submit" class="button">Submit</button>
+                <p id="errorText"></p>
+                <p id="result"></p>
+            </form>
+        </section>
+
+
+
+        <footer id="legal">
+            <ul id="footerLinks">
+                <li><a href="#home">Back To Top</a></li>
+                <li><a href="https://github.com/james-york2008/UXPrep">View Source Code</a></li>
+            </ul>
+
+            <p id="pageDescription">UXPrep is a frontend web development interview practice tool. It focuses on important concepts like accessibility, semantics, and performance.</p>
+
+            <p id="copyrightTag">&copy; 2026 UXPrep. All rights reserved</p>
+        </footer>
+
+    <script src="src/global/javascript/hamburgerMenu.js"></script>
+    <script type="module" src="src/quiz/javascript/loadTest.js"></script>
+    <script type="module" src="src/quiz/javascript/renderTest.js"></script>
+    <script src="src/quiz/javascript/selectAnswer.js"></script>
+    </main>
+    
+</body>
+</html>
