@@ -5,10 +5,15 @@ document.addEventListener('DOMContentLoaded', async() => {
     const type = parameters.get('type')
 
     const data = await loadQuestions()
-    const test = data.quizzes.find(section => section.type === type)
+    let test = data.quizzes.find(section => section.type === type)
+    if (type === 'random') {
+        let randomNumber = Math.floor(Math.random() * data.quizzes.length)
+        test = data.quizzes[randomNumber]
+    }
 
     if (!test) {
         document.body.innerHTML = `<h1>Test not found</h1>`
+        return
     } else {
         let testLabel = document.getElementById('testType')
         testLabel.textContent = test.title
@@ -47,8 +52,9 @@ document.addEventListener('DOMContentLoaded', async() => {
     let allAnswered = true
     let allQuestionsAnswered = () => {
         test.questions.forEach(question => {
+            allAnswered = true
             let selectedAnswers = document.querySelector(`input[name="${question.id}"]:checked`)
-            if (selectedAnswers === false) {
+            if (!selectedAnswers) {
                 allAnswered = false
             }
         })
@@ -56,6 +62,10 @@ document.addEventListener('DOMContentLoaded', async() => {
 
     let selectedAnswerText = ''
     let checkAnswers = () => {
+        document.querySelectorAll('.correct, .incorrect').forEach(answer => {
+            answer.classList.remove('correct', 'incorrect')
+        })
+        
         if (allAnswered === true) {
             let correctAnswerCount = 0
             test.questions.forEach(question => {
@@ -66,7 +76,7 @@ document.addEventListener('DOMContentLoaded', async() => {
                 }
 
                 let selectedAnswer = selectedAnswerText.closest('label')
-                
+
                 if (selectedAnswerText.value === question.correctAnswer) {
                     correctAnswerCount++
                     selectedAnswer.classList.add('correct')
