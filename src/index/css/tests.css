@@ -13,6 +13,10 @@
     margin-bottom: 2rem;
 }
 
+.test a {
+    display: block;
+}
+
 .testImage {
     width: 45vw;
 }
