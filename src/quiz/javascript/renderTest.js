@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', async() => {
     } else {
         let testLabel = document.getElementById('testType')
         testLabel.textContent = test.title
+
+        document.title = `${test.title} quiz`
     }
 
     let questionsContainer = document.getElementById('questionsContainer')
@@ -51,8 +53,8 @@ document.addEventListener('DOMContentLoaded', async() => {
 
     let allAnswered = true
     let allQuestionsAnswered = () => {
+        allAnswered = true
         test.questions.forEach(question => {
-            allAnswered = true
             let selectedAnswers = document.querySelector(`input[name="${question.id}"]:checked`)
             if (!selectedAnswers) {
                 allAnswered = false
