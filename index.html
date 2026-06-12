@@ -1,114 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Practice frontend development interview questions to ace your next interview">
-    <title>UXPrep</title>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="src/global/css/base.css">
-    <link rel="stylesheet" type="text/css" href="src/global/css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="src/index/css/instructions.css">
-    <link rel="stylesheet" type="text/css" href="src/index/css/tests.css">
-    <link rel="stylesheet" type="text/css" href="src/global/css/footer.css">
-</head>
-<body>
-    <main>
-        <header id="home">
-            <nav>
-                <div id="desktopNavWrapper">
-                    <div id="mobileNavWrapper">
-                        <a href="index.html"><img src="images/logo.png" alt="U.X. Prep. Link to home page" loading="lazy" id="uxprepLogo"></a>
-                        <button id="dropdownButton" type="button" aria-expanded="false" aria-controls="navList">&#9776</button>
-                    </div>
-                    <ul id="navList" class="d-none">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#tests">Tests</a></li>
-                        <li><a href="#legal">Legal</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <section id="instructions">
-            <div id="heroTitle">
-                <div id="heroStackedCotent">
-                    <h1>Sharpen Your Frontend Skills</h1>
-                    <p>Practice frontend development interview questions to ace your next interview</p>
-                </div>
-                <img src="images/heroImage.png" id="desktopHeroImage" alt="" aria-hidden="true">
-           
-            </div>
-
-            <p id="mobileHeroDescription">Practice frontend development interview questions to ace your next interview</p>
-            <img src="images/heroImage.png" id="mobileHeroImage" alt="" aria-hidden="true"><br>
-            <a class="button" href="#tests">Start Practicing</a>
-        </section>
-
-        <section id="tests">
-            <h2>Choose a quiz topic</h2>
-
-            <ul id="testsList">
-                <li>
-                    <article class="test">
-                        <a href="quiz.html?type=htmlCss">
-                        <img src="images/htmlCss.png" alt="Link to html and css practice quiz" loading="lazy" class="testImage">
-                        <h3 class="testTitle">HTML & CSS</h3>
-                        </a>
-                    </article>
-                </li>
-
-                <li>
-                    <article class="test">
-                            <a href="quiz.html?type=javascript">
-                            <img src="images/js.png" alt="Link to JavaScript practice quiz" loading="lazy" class="testImage">
-                            <h3 class="testTitle">JavaScript</h3>
-                        </a>
-                    </article>
-                </li>
-
-                <li>
-                    <article class="test">
-                            <a href="quiz.html?type=react">
-                            <img src="images/react.png" alt="Link to React JavaScript practice quiz" loading="lazy" class="testImage">
-                            <h3 class="testTitle">ReactJS</h3>
-                        </a>
-                    </article>
-                </li>
-
-                <li>
-                    <article class="test">
-                            <a href="quiz.html?type=accessibility">
-                            <img src="images/accessibility.png" alt="Link to accessibility practice quiz" loading="lazy" class="testImage">
-                            <h3 class="testTitle">Accessibility</h3>
-                        </a>
-                    </article>
-                </li>
-                
-                <li>
-                    <article class="test">
-                            <a href="quiz.html?type=random">
-                            <img src="images/random.png" alt="Link to randomized practice quiz. This quiz combines questions from all of the other listed quizzes" loading="lazy" class="testImage">
-                            <h3 class="testTitle">Random</h3>
-                        </a>
-                    </article>
-                </li>
-            </ul>
-        </section>
-    
-
-
-        <footer id="legal">
-            <ul id="footerLinks">
-                <li><a href="#home">Back To Top</a></li>
-                <li><a href="https://github.com/james-york2008/UXPrep" target="_blank" rel="norefferer">View Source Code</a></li>
-            </ul>
-
-            <p id="pageDescription">UXPrep is a frontend web development interview practice tool. It focuses on important concepts like accessibility, semantics, and performance.</p>
-
-            <p id="copyrightTag">&copy; 2026 UXPrep. All rights reserved</p>
-        </footer>
-
-    <script src="src/global/javascript/hamburgerMenu.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uxprep</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
