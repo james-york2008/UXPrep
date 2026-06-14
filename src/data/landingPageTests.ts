@@ -1,4 +1,4 @@
-import type { LandingPageTest } from "../types/landingPageTest"
+import type { LandingPageTest } from "../types/landingPage/LandingPageTest";
 
 export const landingPageTests: LandingPageTest[] = [
   {
