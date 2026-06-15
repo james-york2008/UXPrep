@@ -1,6 +1,6 @@
 import type { QuizPageTest } from "../../types/quizPage/QuizPageTest"
 
-export const javascriptTest: QuizPageTest = {
+export const test: QuizPageTest = {
   id: "javascript",
   title: "JavaScript",
   questions: [

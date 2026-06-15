@@ -1,6 +1,6 @@
 import type { QuizPageTest } from "../../types/quizPage/QuizPageTest"
 
-export const htmlCssTest: QuizPageTest = {
+export const test: QuizPageTest = {
   id: "accessibility",
   title: "Accessibility (a11y)",
   questions: [
