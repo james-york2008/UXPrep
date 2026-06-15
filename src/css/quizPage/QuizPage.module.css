@@ -54,6 +54,22 @@
     line-height: 2rem;
 }
 
+.errorText {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.loadingText {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
 @media(min-width: 500px) {
     .question {
         font-size: 1.2rem;
@@ -68,5 +84,13 @@
 
     .test {
         margin: 0 7rem;
+    }
+
+    .errorText {
+        font-size: 2rem;
+    }
+
+    .loadingText {
+        font-size: 2rem;
     }
 }

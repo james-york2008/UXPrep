@@ -2,6 +2,7 @@ import styles from '../../../css/quizPage/QuizPage.module.css'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import type { QuizPageTest } from '../../../types/quizPage/QuizPageTest'
+import Questions from './Questions'
 
 export default function Quiz() {
   let { quizId } = useParams<{ quizId: string }>()
@@ -11,15 +12,13 @@ export default function Quiz() {
   
   if (!quizId || !quizzes.includes(quizId) && quizId !== 'random') {
     return(
-      <p>Quiz not found</p>
+      <p className={styles.errorText}>Quiz not found</p>
     )
   }
 
   useEffect(() => {
     const loadQuiz = async () => {
       try{
-        setLoading(true)
-        
         if (quizId === 'random') {
           quizId = quizzes[Math.floor(Math.random() * quizzes.length)]
         }
@@ -42,7 +41,7 @@ export default function Quiz() {
 
   if (loading) {
     return(
-      <p>Loading your quiz</p>
+      <p className={styles.loadingText}>Loading your quiz</p>
     )
   }
 
@@ -51,9 +50,7 @@ export default function Quiz() {
       <form className={styles.test} id="tests">
         <p className={styles.testType}>{quizData?.title}</p>
 
-        <div className={styles.questionsContainer}>
-
-       </div>
+        {quizData && <Questions data={quizData} />}
 
         <button type="submit" className={`button ${styles.button}`}>Submit</button>
       </form>
