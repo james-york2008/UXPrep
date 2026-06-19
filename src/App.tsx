@@ -7,9 +7,9 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/UXPrep" element={<LandingPage />} />
 
-          <Route path="/quiz/:quizId" element={<QuizPage />} />
+          <Route path="/UXPrep/quiz/:quizId" element={<QuizPage />} />
 
           <Route path="*" element={<h1>Page not found</h1>} />
         </Routes>

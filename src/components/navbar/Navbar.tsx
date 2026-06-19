@@ -1,6 +1,7 @@
 import logo from '../../assets/logo.png'
 import styles from '../../css/Navbar.module.css'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar () {
   const [dropdownMenuOpen, setDropdownMenuOpen] = useState<boolean>(false)
@@ -13,7 +14,7 @@ export default function Navbar () {
       <nav>
           <div className={styles.desktopNavWrapper}>
               <div className={styles.mobileNavWrapper}>
-                  <a href="/"><img src={logo} alt="U.X. Prep Link to home page" loading="lazy" className={styles.uxprepLogo} /></a>
+                  <Link to="/UXPrep/"><img src={logo} alt="U.X. Prep Link to home page" loading="lazy" className={styles.uxprepLogo} /></Link>
                   <button 
                     className={styles.dropdownButton} 
                     type="button" 
@@ -26,7 +27,7 @@ export default function Navbar () {
               </div>
               
               <ul className={`${styles.navList} ${dropdownMenuOpen ? styles.displayShow : styles.displayNone}`} id='navList'>
-                  <li><a href="#home" onClick={closeMenu}>Home</a></li>
+                  <li><Link to="/UXPrep/" onClick={closeMenu}>Home</Link></li>
                   <li><a href="#tests" onClick={closeMenu}>Tests</a></li>
                   <li><a href="#legal" onClick={closeMenu}>Legal</a></li>
               </ul>
