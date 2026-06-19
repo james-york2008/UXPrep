@@ -1,0 +1,96 @@
+.test {
+    margin: 0 2rem;
+    padding: 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.test fieldset legend {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+}
+
+.test fieldset {
+    border: none;
+}
+
+.question {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    line-height: 1.2rem;
+    padding:  0 0.5rem 4rem;
+    font-size: 0.9rem;
+}
+
+.question div {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    justify-self: center;
+}
+
+.answerLetter {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+}
+
+.correct {
+    background-color: rgba(0, 255, 0, 0.5);
+    padding: 0.3rem;
+    line-height: 2rem;
+}
+
+.incorrect {
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 0.3rem;
+    line-height: 2rem;
+}
+
+.errorText {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.loadingText {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+@media(min-width: 500px) {
+    .question {
+        font-size: 1.2rem;
+    }
+}
+
+@media(min-width : 992px) {
+    .question, .question div label .answerLetter, .testType {
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .test {
+        margin: 0 7rem;
+    }
+
+    .errorText {
+        font-size: 2rem;
+    }
+
+    .loadingText {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,118 @@
+import type { QuizPageTest } from "../../types/quizPage/QuizPageTest"
+
+export const test: QuizPageTest = {
+  id: "javascript",
+  title: "JavaScript",
+  questions: [
+    {
+      id: "q1",
+      question: "What is the difference between var, let, and const in JavaScript?",
+      options: [
+        "var is function-scoped while let and const are block-scoped, and const cannot be reassigned",
+        "All three are block-scoped but const is immutable",
+        "let is global while var and const are local",
+        "const can be reassigned but let cannot"
+      ],
+      correctAnswer: "var is function-scoped while let and const are block-scoped, and const cannot be reassigned"
+    },
+    {
+      id: "q2",
+      question: "What is a closure in JavaScript?",
+      options: [
+        "A function that has access to its own scope, the outer function’s scope, and the global scope",
+        "A function that only has access to global variables",
+        "A way to stop a function from executing",
+        "A method used to close event listeners"
+      ],
+      correctAnswer: "A function that has access to its own scope, the outer function’s scope, and the global scope"
+    },
+    {
+      id: "q3",
+      question: "What will happen if you try to access a variable before it is declared with let or const?",
+      options: [
+        "It will return undefined",
+        "It will throw a ReferenceError due to the temporal dead zone",
+        "It will automatically initialize to null",
+        "It will behave the same as var"
+      ],
+      correctAnswer: "It will throw a ReferenceError due to the temporal dead zone"
+    },
+    {
+      id: "q4",
+      question: "What is the difference between == and === in JavaScript?",
+      options: [
+        "== compares both value and type, while === compares only value",
+        "=== compares both value and type, while == performs type coercion before comparison",
+        "There is no difference between them",
+        "== is deprecated in modern JavaScript"
+      ],
+      correctAnswer: "=== compares both value and type, while == performs type coercion before comparison"
+    },
+    {
+      id: "q5",
+      question: "How does the JavaScript event loop handle asynchronous operations?",
+      options: [
+        "It executes async code immediately before synchronous code",
+        "It pushes async callbacks to the call stack directly",
+        "It moves completed async tasks from the callback queue to the call stack when it is empty",
+        "It blocks execution until async tasks are finished"
+      ],
+      correctAnswer: "It moves completed async tasks from the callback queue to the call stack when it is empty"
+    },
+    {
+      id: "q6",
+      question: "What is the purpose of the this keyword in JavaScript?",
+      options: [
+        "It always refers to the global object",
+        "It refers to the object that is currently executing the function",
+        "It refers to the parent function scope",
+        "It always refers to the DOM element"
+      ],
+      correctAnswer: "It refers to the object that is currently executing the function"
+    },
+    {
+      id: "q7",
+      question: "What is the difference between null and undefined in JavaScript?",
+      options: [
+        "null is an assigned value representing no value, while undefined means a variable has been declared but not assigned",
+        "undefined is an assigned value, while null means not declared",
+        "They are completely interchangeable",
+        "null is automatically assigned by JavaScript in all cases"
+      ],
+      correctAnswer: "null is an assigned value representing no value, while undefined means a variable has been declared but not assigned"
+    },
+    {
+      id: "q8",
+      question: "What does Array.prototype.map do?",
+      options: [
+        "It modifies the original array directly",
+        "It creates a new array by applying a function to each element",
+        "It filters elements out of an array",
+        "It sorts the array in place"
+      ],
+      correctAnswer: "It creates a new array by applying a function to each element"
+    },
+    {
+      id: "q9",
+      question: "What is the difference between synchronous and asynchronous code execution?",
+      options: [
+        "Synchronous code runs in parallel while asynchronous code runs sequentially",
+        "Synchronous code blocks execution until complete, while asynchronous code allows other operations to run before completion",
+        "Asynchronous code always runs faster than synchronous code",
+        "There is no difference in JavaScript"
+      ],
+      correctAnswer: "Synchronous code blocks execution until complete, while asynchronous code allows other operations to run before completion"
+    },
+    {
+      id: "q10",
+      question: "What is the purpose of promises in JavaScript?",
+      options: [
+        "To replace all callbacks in JavaScript",
+        "To handle asynchronous operations and represent a future value or error",
+        "To make synchronous code run faster",
+        "To store data permanently in memory"
+      ],
+      correctAnswer: "To handle asynchronous operations and represent a future value or error"
+    }
+  ]
+} 
