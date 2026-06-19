@@ -22,7 +22,7 @@ export default function Tests () {
           return(
             <li key={test.id}>
               <article className={styles.test}>
-                <Link to={`/quiz/${test.id}`}>
+                <Link to={`/UXPrep/quiz/${test.id}`}>
                   <img src={testIcon} alt={test.altText} loading="lazy" className={styles.testImage} />
                   <h3 className={styles.testTitle}>{test.name}</h3>
                 </Link>
