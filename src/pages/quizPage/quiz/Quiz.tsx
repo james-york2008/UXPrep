@@ -3,13 +3,15 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import type { QuizPageTest } from '../../../types/quizPage/QuizPageTest'
 import Questions from './Questions'
+import handleQuizSubmission from './handleQuizSubmission'
 
 export default function Quiz() {
   let { quizId } = useParams<{ quizId: string }>()
   const [quizData, setQuizData] = useState<QuizPageTest>()
   const [loading, setLoading] = useState<boolean>(true)
   const quizzes = ['htmlCss', 'javascript', 'react', 'accessibility']
-  
+  const [quizResults, setQuizResults] = useState<boolean[] | null>(null)
+
   if (!quizId || !quizzes.includes(quizId) && quizId !== 'random') {
     return(
       <p className={styles.errorText}>Quiz not found</p>
@@ -24,7 +26,7 @@ export default function Quiz() {
         }
 
         const data = await import(`../../../data/quizzes/${quizId}.ts`)
-                
+        
         setQuizData(data.test)      
       } catch(err) {
         console.error(err)
@@ -36,7 +38,7 @@ export default function Quiz() {
     if (quizId) {
       loadQuiz()
     }
-    
+
   }, [quizId])
 
   if (loading) {
@@ -45,12 +47,27 @@ export default function Quiz() {
     )
   }
 
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    
+    const formData = new FormData(event.currentTarget)
+    const answersArray: string[] = []
+
+    quizData?.questions.forEach(question => {
+      const answer = formData.get(question.id) as string
+      answersArray.push(answer || '')
+    })
+
+    const results = handleQuizSubmission(quizData, answersArray)
+    setQuizResults(results)
+  }
+
   return(
     <section className={styles.testSection}>
-      <form className={styles.test} id="tests">
-        <p className={styles.testType}>{quizData?.title}</p>
+      <form className={styles.test} id="tests" onSubmit={handleSubmit}>
+        <p className={`${styles.testType}`}>{quizData?.title}</p>
 
-        {quizData && <Questions data={quizData} />}
+        {quizData && <Questions data={quizData} results={quizResults} />}
 
         <button type="submit" className={`button ${styles.button}`}>Submit</button>
       </form>
