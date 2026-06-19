@@ -1,4 +1,4 @@
-import type { Question } from "./question"
+import type { Question } from "./Question"
 
 export type QuizPageTest = {
   id: string,
