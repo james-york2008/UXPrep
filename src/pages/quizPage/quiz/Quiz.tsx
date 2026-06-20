@@ -62,6 +62,11 @@ export default function Quiz() {
     setQuizResults(results)
   }
 
+  let correctAnswers = 0
+  quizResults?.forEach((result) => {
+    if (result) correctAnswers++
+  })
+
   return(
     <section className={styles.testSection}>
       <form className={styles.test} id="tests" onSubmit={handleSubmit}>
@@ -70,6 +75,8 @@ export default function Quiz() {
         {quizData && <Questions data={quizData} results={quizResults} />}
 
         <button type="submit" className={`button ${styles.button}`}>Submit</button>
+        <p className={styles.result}>{quizResults && `You got ${correctAnswers} out of ${quizData?.questions.length} correct`}</p>
+        <p className={styles.errorText}>{quizResults === null && `Please answer all questions before submitting`}</p>
       </form>
     </section>    
   )
