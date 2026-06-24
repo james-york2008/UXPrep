@@ -70,6 +70,10 @@
     font-weight: 700;
 }
 
+.answer {
+    margin-bottom: 0.3rem;
+}
+
 @media(min-width: 500px) {
     .question {
         font-size: 1.2rem;

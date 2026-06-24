@@ -70,13 +70,13 @@ export default function Quiz() {
   return(
     <section className={styles.testSection}>
       <form className={styles.test} id="tests" onSubmit={handleSubmit}>
-        <p className={`${styles.testType}`}>{quizData?.title}</p>
+        <p className={styles.testType}>{quizData?.title}</p>
 
         {quizData && <Questions data={quizData} results={quizResults} />}
 
+        <p className={styles.errorText}>{quizResults === null && `Please answer all questions before submitting`}</p>
         <button type="submit" className={`button ${styles.button}`}>Submit</button>
         <p className={styles.result}>{quizResults && `You got ${correctAnswers} out of ${quizData?.questions.length} correct`}</p>
-        <p className={styles.errorText}>{quizResults === null && `Please answer all questions before submitting`}</p>
       </form>
     </section>    
   )

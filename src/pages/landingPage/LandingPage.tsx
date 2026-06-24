@@ -7,8 +7,12 @@ export default function LandingPage () {
   return(
     <>
       <Navbar />
-      <Hero />
-      <Tests />
+
+      <main>
+        <Hero />
+        <Tests />
+      </main>
+      
       <Legal />
     </>
   )

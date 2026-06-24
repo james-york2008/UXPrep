@@ -7,7 +7,11 @@ export default function QuizPage() {
   return (
     <>
       <Navbar />
-      <Quiz />
+
+      <main>
+        <Quiz />
+      </main>
+      
       <Legal />
     </>
   )

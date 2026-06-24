@@ -13,7 +13,7 @@ export default function Hero () {
       </div>
 
       <p className={styles.mobileHeroDescription}>Practice frontend development interview questions to ace your next interview</p>
-      <img src={heroImage} className={styles.mobileHeroImage} alt="" aria-hidden="true" /><br />
+      <img src={heroImage} className={styles.mobileHeroImage} alt="" aria-hidden="true" />
       <a className="button" href="#tests">Start Practicing</a>
     </section>
   )
