@@ -12,7 +12,7 @@ export default function Questions ({ data, results }: Props)  {
   return(
     <div className={styles.questionsContainer}>
       {data.questions.map((question, questionIndex) => (
-        <fieldset className={`${styles.question} `} key={question.id}>
+        <fieldset className={styles.question} key={question.id}>
           <legend>{question.question}</legend>
 
           <div className={`${results === null ? '' : results[questionIndex] ? styles.correct : styles.incorrect}`}>
@@ -23,12 +23,11 @@ export default function Questions ({ data, results }: Props)  {
                   return null
                 })()}
 
-                <label>  
+                <label className={styles.answer}>  
                   <input type="radio" name={question.id} value={answer} />  
-                  <span className={styles.answerLetter}>{letter}.</span>  
+                  <span className={styles.answerLetter} aria-hidden="true">{letter}.</span>  
                   <span className={styles.answerText}>{answer}</span>  
                 </label>
-                <br />
               </div>
             ))}
           </div>
