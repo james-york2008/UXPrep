@@ -7,7 +7,6 @@
     padding: 0;
     display: flex;
     gap: 1rem;
-    font-size: 1.5rem;
     justify-content: center;
     padding: 3rem 0 0;
 }
@@ -25,6 +24,13 @@
     margin: 0 0.5rem 0.5rem;
 }
 
+.footerLinks, .backToTop {
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
 @media (min-width: 700px) {
     .pageDescription {
         width: 50vw;
@@ -35,6 +41,9 @@
     .footerLinks {
         justify-content: start;
         margin: 3rem;
+    }
+
+    .footerLinks, .backToTop {
         font-size: 1.7rem;
     }
 

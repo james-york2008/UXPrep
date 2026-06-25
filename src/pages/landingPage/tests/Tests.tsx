@@ -24,7 +24,7 @@ export default function Tests () {
               <article className={styles.test}>
                 <Link to={`/UXPrep/quiz/${test.id}`}>
                   <img src={testIcon} alt={test.altText} loading="lazy" className={styles.testImage} />
-                  <h3 className={styles.testTitle} aria-hidden="true">{test.name}</h3>
+                  <h3 className={styles.testTitle} >{test.name}</h3>
                 </Link>
               </article>
             </li>
