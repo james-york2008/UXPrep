@@ -14,7 +14,7 @@ export default function Quiz() {
 
   if (!quizId || !quizzes.includes(quizId) && quizId !== 'random') {
     return(
-      <p className={styles.errorText}>Quiz not found</p>
+      <p className={styles.errorText} role='alert'>Quiz not found</p>
     )
   }
 

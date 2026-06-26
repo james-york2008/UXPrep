@@ -25,7 +25,7 @@ export default function App() {
 
           <Route path="/UXPrep/quiz/:quizId" element={<QuizPage />} />
 
-          <Route path="*" element={<h1>Page not found</h1>} />
+          <Route path="*" element={<h1 role="alert">Page not found</h1>} />
         </Routes>
       </BrowserRouter>
     </>
