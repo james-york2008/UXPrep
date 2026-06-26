@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import LandingPage from "./pages/landingPage/LandingPage"
 import QuizPage from "./pages/quizPage/QuizPage"
 import { useEffect } from "react"
+import ErrorPage from "./pages/errorPage/ErrorPage"
 
 export default function App() {
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function App() {
 
           <Route path="/UXPrep/quiz/:quizId" element={<QuizPage />} />
 
-          <Route path="*" element={<h1 role="alert">Page not found</h1>} />
+          <Route path="*" element={<ErrorPage>Page not found</ErrorPage>} />
         </Routes>
       </BrowserRouter>
     </>

@@ -30,7 +30,7 @@ export default function Tests () {
             </li>
           )
         })}
-        </ul>
+      </ul>
     </section>
   )
 }

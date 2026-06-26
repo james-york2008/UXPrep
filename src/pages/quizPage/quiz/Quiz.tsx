@@ -1,22 +1,18 @@
 import styles from '../../../css/quizPage/QuizPage.module.css'
-import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import type { QuizPageTest } from '../../../types/quizPage/QuizPageTest'
 import Questions from './Questions'
 import handleQuizSubmission from './handleQuizSubmission'
 
-export default function Quiz() {
-  let { quizId } = useParams<{ quizId: string }>()
+type Props = {
+  quizId: string
+  quizzes: string[]
+}
+
+export default function Quiz({ quizId, quizzes }: Props) {
   const [quizData, setQuizData] = useState<QuizPageTest>()
   const [loading, setLoading] = useState<boolean>(true)
-  const quizzes = ['htmlCss', 'javascript', 'react', 'accessibility']
   const [quizResults, setQuizResults] = useState<boolean[] | null>(null)
-
-  if (!quizId || !quizzes.includes(quizId) && quizId !== 'random') {
-    return(
-      <p className={styles.errorText} role='alert'>Quiz not found</p>
-    )
-  }
 
   useEffect(() => {
     const loadQuiz = async () => {

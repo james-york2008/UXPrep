@@ -15,7 +15,7 @@ body {
 
 .button {
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     background-color: rgb(25, 150, 200);
     color: white;
     border-radius: 10px;
@@ -24,4 +24,10 @@ body {
 
 .button:hover {
     cursor: pointer;
+}
+
+@media (min-width: 700px) {
+    .button {
+        padding: 1rem 2rem;
+    }
 }
