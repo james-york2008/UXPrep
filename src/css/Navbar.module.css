@@ -51,6 +51,16 @@
     padding: 2rem;
 }
 
+.skipToMain {
+    opacity: 0;
+    height: 0;
+    position: absolute;
+}
+
+.skipToMain:focus, .skipToMain:hover {
+    opacity: 1;
+}
+
 @media (min-width: 540px) {
     .dropdownButton {
         display: none;

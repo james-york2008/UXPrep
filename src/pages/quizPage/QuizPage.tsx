@@ -8,7 +8,7 @@ export default function QuizPage() {
     <>
       <Navbar />
 
-      <main>
+      <main id="mainContent">
         <Quiz />
       </main>
       

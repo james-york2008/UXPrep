@@ -24,7 +24,7 @@ export default function Questions ({ data, results }: Props)  {
                 })()}
 
                 <label className={styles.answer}>  
-                  <input type="radio" name={question.id} value={answer} />  
+                  <input type="radio" name={question.id} value={answer} required />  
                   <span className={styles.answerLetter} aria-hidden="true">{letter}.</span>  
                   <span className={styles.answerText}>{answer}</span>  
                 </label>

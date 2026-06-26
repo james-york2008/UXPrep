@@ -14,7 +14,7 @@ export default function Quiz() {
 
   if (!quizId || !quizzes.includes(quizId) && quizId !== 'random') {
     return(
-      <p className={styles.errorText}>Quiz not found</p>
+      <p className={styles.errorText} role='alert'>Quiz not found</p>
     )
   }
 
@@ -74,9 +74,9 @@ export default function Quiz() {
 
         {quizData && <Questions data={quizData} results={quizResults} />}
 
-        <p className={styles.errorText}>{quizResults === null && `Please answer all questions before submitting`}</p>
+        <p className={styles.errorText} role='alert'>{quizResults === null && `Please answer all questions before submitting`}</p>
         <button type="submit" className={`button ${styles.button}`}>Submit</button>
-        <p className={styles.result}>{quizResults && `You got ${correctAnswers} out of ${quizData?.questions.length} correct`}</p>
+        <p className={styles.result} role='alert'>{quizResults && `You got ${correctAnswers} out of ${quizData?.questions.length} correct`}</p>
       </form>
     </section>    
   )

@@ -8,7 +8,7 @@ export default function LandingPage () {
     <>
       <Navbar />
 
-      <main>
+      <main id="mainContent">
         <Hero />
         <Tests />
       </main>

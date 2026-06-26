@@ -11,6 +11,7 @@ export default function Navbar () {
 
   return(
     <header className={styles.home} id='home'>
+      <a href='#mainContent' className={styles.skipToMain}>Skip to main content</a>
       <nav>
           <div className={styles.desktopNavWrapper}>
               <div className={styles.mobileNavWrapper}>
