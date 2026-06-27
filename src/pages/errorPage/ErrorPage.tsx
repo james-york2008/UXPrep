@@ -10,9 +10,9 @@ type ErrorProps = {
 export default function ErrorPage({ children }: ErrorProps) {
   return(
     <>
-      <Navbar />
+      <Navbar mainLink={null} skipToMainLink="errorSection" />
 
-      <main>
+      <main id="errorSection">
         <Error>{children}</Error>
       </main>
       

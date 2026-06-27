@@ -6,9 +6,9 @@ import Legal from "../../components/legal/Legal"
 export default function LandingPage () {
   return(
     <>
-      <Navbar />
+      <Navbar mainLink="tests" skipToMainLink="testsSection" />
 
-      <main id="mainContent">
+      <main id="testsSection">
         <Hero />
         <Tests />
       </main>

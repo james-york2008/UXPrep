@@ -12,7 +12,7 @@ const testIcons: Record<string, string> = import.meta.glob(
 
 export default function Tests () {
   return(
-    <section className={styles.tests} id="tests">
+    <section className={styles.tests} id='tests'>
       <h2>Choose a quiz topic</h2>
 
       <ul className={styles.testsList}>

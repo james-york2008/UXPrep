@@ -64,8 +64,8 @@ export default function Quiz({ quizId, quizzes }: Props) {
   })
 
   return(
-    <section className={styles.testSection}>
-      <form className={styles.test} id="tests" onSubmit={handleSubmit}>
+    <section className={styles.testSection} id='quiz'>
+      <form className={styles.test} onSubmit={handleSubmit}>
         <p className={styles.testType}>{quizData?.title}</p>
 
         {quizData && <Questions data={quizData} results={quizResults} />}

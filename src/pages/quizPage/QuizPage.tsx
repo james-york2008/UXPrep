@@ -16,9 +16,9 @@ export default function QuizPage() {
   
   return (
     <>
-      <Navbar />
+      <Navbar mainLink="quiz" skipToMainLink="quizSection" />
 
-      <main id="mainContent">
+      <main id="quizSection">
         <Quiz quizId={quizId} quizzes={quizzes}/>
       </main>
       
