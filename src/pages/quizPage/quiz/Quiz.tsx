@@ -39,7 +39,7 @@ export default function Quiz({ quizId, quizzes }: Props) {
 
   if (loading) {
     return(
-      <p className={styles.loadingText}>Loading your quiz</p>
+      <p className={styles.loadingText} aria-live='polite'>Loading your quiz</p>
     )
   }
 
@@ -72,7 +72,7 @@ export default function Quiz({ quizId, quizzes }: Props) {
 
         <p className={styles.errorText} role='alert'>{quizResults === null && `Please answer all questions before submitting`}</p>
         <button type="submit" className={`button ${styles.button}`}>Submit</button>
-        <p className={styles.result} role='alert'>{quizResults && `You got ${correctAnswers} out of ${quizData?.questions.length} correct`}</p>
+        <p className={styles.result} role='status'>{quizResults && `You got ${correctAnswers} out of ${quizData?.questions.length} correct`}</p>
       </form>
     </section>    
   )

@@ -4,9 +4,9 @@ export default function Legal () {
   function handleBackToTop () {
     window.scrollTo({ top: 0 })
 
-    document.body.setAttribute('tabindex', '-1');
-    document.body.focus();
-    document.body.removeAttribute('tabindex');
+    document.body.setAttribute('tabindex', '-1')
+    document.body.focus()
+    document.body.removeAttribute('tabindex')
   }
 
   return(
