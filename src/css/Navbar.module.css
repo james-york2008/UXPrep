@@ -40,11 +40,13 @@
     opacity: 0;
     overflow: hidden;
     position: relative;
+    visibility: hidden;
 }
 
 .displayShow {
     opacity: 1;
     max-height: 200px;
+    visibility: visible;
 }
 
 .navList.displayShow {
@@ -64,6 +66,10 @@
 @media (min-width: 540px) {
     .dropdownButton {
         display: none;
+    }
+
+    .displayNone {
+        visibility: visible;
     }
 
     .navList {
