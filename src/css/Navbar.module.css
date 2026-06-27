@@ -22,7 +22,7 @@
     color: rgb(70, 120, 180);
 }
 
-.navList li a:hover {
+.navList li a:hover, .navList li a:focus {
     color: rgb(40, 85, 150);
 }
 
@@ -98,6 +98,9 @@
 @media (min-width: 700px) {
     .desktopNavWrapper {
         font-size: 1.7rem;
+    }
+    .skipToMain:focus, .skipToMain:hover {
+        font-size: 2rem;
     }
 }
 

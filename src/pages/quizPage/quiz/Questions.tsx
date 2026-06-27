@@ -14,6 +14,7 @@ export default function Questions ({ data, results }: Props)  {
       {data.questions.map((question, questionIndex) => (
         <fieldset className={styles.question} key={question.id}>
           <legend>{question.question}</legend>
+          {results && <p>{results[questionIndex] ? 'Correct' : 'Incorrect'}</p>}
 
           <div className={`${results === null ? '' : results[questionIndex] ? styles.correct : styles.incorrect}`}>
             {question.options.map((answer, index) => (
