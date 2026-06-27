@@ -31,3 +31,13 @@ body {
         padding: 1rem 2rem;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition: none;
+    }
+}
