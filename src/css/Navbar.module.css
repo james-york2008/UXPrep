@@ -19,11 +19,12 @@
 
 .navList li a {
     display: block;
-    color: rgb(70, 120, 180);
+    color: rgb(5, 50, 125);
 }
 
 .navList li a:hover, .navList li a:focus {
-    color: rgb(40, 85, 150);
+    color: rgb(5, 35, 75);
+    font-weight: 700;
 }
 
 .uxprepLogo {
