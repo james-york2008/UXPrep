@@ -33,6 +33,7 @@ body {
 @media (min-width: 700px) {
     .button {
         padding: 1rem 2rem;
+        background-color: rgb(5, 50, 175);
     }
 }
 

@@ -29,6 +29,8 @@
     border: none;
     font-size: 1.5rem;
     text-decoration: underline;
+    background-color: transparent;
+    color: rgb(58, 58, 58);
 }
 
 @media (min-width: 700px) {

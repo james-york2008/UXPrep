@@ -25,13 +25,14 @@
     padding: 5rem 0 1rem;
     text-align: center;
     font-size: 1.7rem;
+    color: rgb(58, 58, 58);
 }
 
 .testTitle {
     font-size: 1.3rem;
     font-weight: 900;
     text-align: center;
-    color: black;
+    color: rgb(58, 58, 58);
     margin: 1rem;
 }
 
