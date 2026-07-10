@@ -1,0 +1,31 @@
+[
+  {
+    "id": "htmlCss",
+    "name": "HTML & CSS",
+    "imageLink": "htmlCss.png"
+  },
+ 
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "imageLink": "js.png"
+  },
+
+  {
+    "id": "react",
+    "name": "ReactJS",
+    "imageLink": "react.png"
+  },
+
+  {
+    "id": "accessibility",
+    "name": "Accessibility",
+    "imageLink": "accessibility.png"
+  },
+
+  {
+    "id": "random",
+    "name": "Random",
+    "imageLink": "random.png"
+  }
+]
