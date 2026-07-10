@@ -1,0 +1,116 @@
+{
+  "id": "accessibility",
+  "title": "Accessibility (a11y)",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the primary goal of web accessibility?",
+      "options": [
+        "To make websites visually appealing",
+        "To ensure websites are usable by people with disabilities",
+        "To improve website performance",
+        "To reduce development time"
+      ],
+      "correctAnswer": "To ensure websites are usable by people with disabilities"
+    },
+    {
+      "id": "q2",
+      "question": "What does WCAG stand for?",
+      "options": [
+        "Web Content Accessibility Guidelines",
+        "Web Compliance and Accessibility Guide",
+        "Worldwide Content Accessibility Group",
+        "Web Coding Accessibility Guidelines"
+      ],
+      "correctAnswer": "Web Content Accessibility Guidelines"
+    },
+    {
+      "id": "q3",
+      "question": "When should ARIA roles and attributes be used?",
+      "options": [
+        "Always, instead of semantic HTML",
+        "Only when native HTML elements do not provide sufficient accessibility",
+        "Only for styling purposes",
+        "Only in JavaScript frameworks"
+      ],
+      "correctAnswer": "Only when native HTML elements do not provide sufficient accessibility"
+    },
+    {
+      "id": "q4",
+      "question": "What is the purpose of the alt attribute on images?",
+      "options": [
+        "To improve image loading speed",
+        "To provide alternative text for screen readers and when images fail to load",
+        "To style images with CSS",
+        "To define image dimensions"
+      ],
+      "correctAnswer": "To provide alternative text for screen readers and when images fail to load"
+    },
+    {
+      "id": "q5",
+      "question": "Why is keyboard accessibility important?",
+      "options": [
+        "It improves SEO rankings",
+        "Some users rely on keyboards or assistive technologies instead of a mouse",
+        "It makes animations smoother",
+        "It reduces page load time"
+      ],
+      "correctAnswer": "Some users rely on keyboards or assistive technologies instead of a mouse"
+    },
+    {
+      "id": "q6",
+      "question": "What is a common issue with using only color to convey information?",
+      "options": [
+        "It increases file size",
+        "It can make content inaccessible to users with color vision deficiencies",
+        "It slows down rendering",
+        "It breaks responsive layouts"
+      ],
+      "correctAnswer": "It can make content inaccessible to users with color vision deficiencies"
+    },
+    {
+      "id": "q7",
+      "question": "What does 'focus' refer to in web accessibility?",
+      "options": [
+        "The currently visible section of a page",
+        "The element currently selected for keyboard interaction",
+        "The main heading of the page",
+        "The element with the highest z-index"
+      ],
+      "correctAnswer": "The element currently selected for keyboard interaction"
+    },
+    {
+      "id": "q8",
+      "question": "Which practice improves accessibility for form inputs?",
+      "options": [
+        "Using placeholder text instead of labels",
+        "Associating labels explicitly with form controls",
+        "Removing all validation messages",
+        "Using only icons without text"
+      ],
+      "correctAnswer": "Associating labels explicitly with form controls"
+    },
+    {
+      "id": "q9",
+      "question": "What is the purpose of skip navigation links?",
+      "options": [
+        "To skip loading JavaScript files",
+        "To allow users to bypass repetitive navigation and jump to main content",
+        "To improve animation performance",
+        "To hide navigation menus"
+      ],
+      "correctAnswer": "To allow users to bypass repetitive navigation and jump to main content"
+    },
+    {
+      "id": "q10",
+      "question": "What does a sufficient color contrast ratio ensure?",
+      "options": [
+        "Faster rendering times",
+        "Better visibility and readability for users, including those with visual impairments",
+        "Improved JavaScript execution",
+        "Consistent layout spacing"
+      ],
+      "correctAnswer": "Better visibility and readability for users, including those with visual impairments"
+    }
+  ]
+}
