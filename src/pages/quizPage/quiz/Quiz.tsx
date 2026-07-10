@@ -21,9 +21,14 @@ export default function Quiz({ quizId, quizzes }: Props) {
           quizId = quizzes[Math.floor(Math.random() * quizzes.length)]
         }
 
-        const data = await import(`../../../data/quizzes/${quizId}.ts`)
+        const res = await fetch(`/UXPrep/data/quizzes/${quizId}.json`)
         
-        setQuizData(data.test)      
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status}`)
+        }
+
+        let data = await res.json()
+        setQuizData(data)      
       } catch(err) {
         console.error(err)
       } finally {
