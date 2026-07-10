@@ -56,7 +56,7 @@ The largest challenge was rethinking application architecture and logic. During 
 
 
 ### Dynamic Content Rendering
-To improve scalability, quiz cards on the landing page are rendered dynamically rather than being hardcoded. The application dynamically renders quizzes from TypeScript data in order to support any number of questions or answers without changes to the UI components.
+To improve scalability, quiz cards on the landing page are rendered dynamically rather than being hardcoded. The application dynamically renders quizzes from JSON data in order to support any number of questions or answers without changes to the UI components. Originally it rendered TypeScript data, but that was replaced to separate logic from data and to simplify scalability.
 
 
 ### Understanding React Rendering
