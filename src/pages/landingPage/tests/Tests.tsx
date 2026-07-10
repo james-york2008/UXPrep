@@ -17,7 +17,7 @@ export default function Tests () {
 
   useEffect(() => {
     const fetchData = async () => {
-      try{
+      try {
         const res = await fetch('/UXPrep/data/landingPageTests.json')
       
         if (!res.ok) {
@@ -36,9 +36,11 @@ export default function Tests () {
     fetchData()
   }, [])
 
-  if (loading) (
-    <p>Loading quizzes</p>
-  )
+  if (loading) {
+    return (
+      <p>Loading quizzes</p>
+    )
+  }
   
   return(
     <section className={styles.tests} id='tests'>
