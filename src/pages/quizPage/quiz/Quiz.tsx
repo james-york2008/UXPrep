@@ -13,15 +13,14 @@ export default function Quiz({ quizId, quizzes }: Props) {
   const [quizData, setQuizData] = useState<QuizPageTest>()
   const [loading, setLoading] = useState<boolean>(true)
   const [quizResults, setQuizResults] = useState<boolean[] | null>(null)
-  const [updatedQuizId, setUpdatedQuizId] = useState<string>(quizId)
 
   useEffect(() => {
+
     const loadQuiz = async () => {
-      try{
-        if (updatedQuizId === "random") {
-          const newQuizId = quizzes[Math.floor(Math.random() * quizzes.length)]
-          setUpdatedQuizId(newQuizId)
-        }
+      try {
+        const updatedQuizId = quizId === "random" 
+          ? quizzes[Math.floor(Math.random() * quizzes.length)]
+          : quizId
 
         const res = await fetch(`/UXPrep/data/quizzes/${updatedQuizId}.json`)
         
@@ -38,11 +37,11 @@ export default function Quiz({ quizId, quizzes }: Props) {
       }
     }
 
-    if (updatedQuizId) {
+    if (quizId) {
       loadQuiz()
     }
 
-  })
+  }, [quizId, quizzes])
 
   if (loading) {
     return(
