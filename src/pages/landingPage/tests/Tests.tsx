@@ -24,7 +24,7 @@ export default function Tests () {
           throw new Error(`HTTP ${res.status}`)
         }
   
-        let data = await res.json()
+        const data = await res.json()
         setLandingPageTests(data)
       } catch (err) {
         console.error(err)
@@ -48,7 +48,7 @@ export default function Tests () {
 
       <ul className={styles.testsList}>
         {landingPageTests?.map((test) => {
-          let testIcon = testIcons[`../../../assets/testIcons/${test.imageLink}`]
+          const testIcon = testIcons[`../../../assets/testIcons/${test.imageLink}`]
 
           return(
             <li key={test.id}>
