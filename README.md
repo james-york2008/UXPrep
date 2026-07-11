@@ -66,6 +66,12 @@ While implementing quiz submission logic, I initially attempted using `useRef` t
 ### Accessibility Improvements
 During the migration, I revisited portions of the original styling and corrected accessibility concerns, including improved contrast within the mobile navigation menu.
 
+### Code Quality
+- Switched unnecessary `let` variable declarations for `const`
+- Redesigned the rendering logic to remove illegal render-phase side effects
+- Used local inline calculations as opposed to render-phase side effects
+- Replaced an unnecessary `useState` hook with a block scoped constant
+
 
 ## Potential Future Improvements: 
 

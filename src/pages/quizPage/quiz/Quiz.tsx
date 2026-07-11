@@ -1,8 +1,8 @@
-import styles from '../../../css/quizPage/QuizPage.module.css'
-import { useEffect, useState } from 'react'
-import type { QuizPageTest } from '../../../types/quizPage/QuizPageTest'
-import Questions from './Questions'
-import handleQuizSubmission from './handleQuizSubmission'
+import styles from "../../../css/quizPage/QuizPage.module.css"
+import { useEffect, useState } from "react"
+import type { QuizPageTest } from "../../../types/quizPage/QuizPageTest"
+import Questions from "./Questions"
+import handleQuizSubmission from "./handleQuizSubmission"
 
 type Props = {
   quizId: string
@@ -15,19 +15,20 @@ export default function Quiz({ quizId, quizzes }: Props) {
   const [quizResults, setQuizResults] = useState<boolean[] | null>(null)
 
   useEffect(() => {
-    const loadQuiz = async () => {
-      try{
-        if (quizId === 'random') {
-          quizId = quizzes[Math.floor(Math.random() * quizzes.length)]
-        }
 
-        const res = await fetch(`/UXPrep/data/quizzes/${quizId}.json`)
+    const loadQuiz = async () => {
+      try {
+        const updatedQuizId = quizId === "random" 
+          ? quizzes[Math.floor(Math.random() * quizzes.length)]
+          : quizId
+
+        const res = await fetch(`/UXPrep/data/quizzes/${updatedQuizId}.json`)
         
         if (!res.ok) {
           throw new Error(`HTTP ${res.status}`)
         }
 
-        let data = await res.json()
+        const data = await res.json()
         setQuizData(data)      
       } catch(err) {
         console.error(err)
@@ -40,11 +41,11 @@ export default function Quiz({ quizId, quizzes }: Props) {
       loadQuiz()
     }
 
-  }, [quizId])
+  }, [quizId, quizzes])
 
   if (loading) {
     return(
-      <p className={styles.loadingText} aria-live='polite'>Loading your quiz</p>
+      <p className={styles.loadingText} aria-live="polite">Loading your quiz</p>
     )
   }
 
@@ -56,7 +57,7 @@ export default function Quiz({ quizId, quizzes }: Props) {
 
     quizData?.questions.forEach(question => {
       const answer = formData.get(question.id) as string
-      answersArray.push(answer || '')
+      answersArray.push(answer || "")
     })
 
     const results = handleQuizSubmission(quizData, answersArray)
@@ -69,15 +70,15 @@ export default function Quiz({ quizId, quizzes }: Props) {
   })
 
   return(
-    <section className={styles.testSection} id='quiz'>
+    <section className={styles.testSection} id="quiz">
       <form className={styles.test} onSubmit={handleSubmit}>
         <p className={styles.testType}>{quizData?.title}</p>
 
         {quizData && <Questions data={quizData} results={quizResults} />}
 
-        <p className={styles.errorText} role='alert'>{quizResults === null && `Please answer all questions before submitting`}</p>
+        <p className={styles.errorText} role="alert">{quizResults === null && `Please answer all questions before submitting`}</p>
         <button type="submit" className={`button ${styles.button}`}>Submit</button>
-        <p className={styles.result} role='status'>{quizResults && `You got ${correctAnswers} out of ${quizData?.questions.length} correct`}</p>
+        <p className={styles.result} role="status">{quizResults && `You got ${correctAnswers} out of ${quizData?.questions.length} correct`}</p>
       </form>
     </section>    
   )
