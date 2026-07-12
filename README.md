@@ -1,6 +1,10 @@
 # UXPrep 
 [Live Page](https://james-york2008.github.io/UXPrep/)
 
+![Image of the Neon Reel landing page on desktop](./src/assets/readmeImages/desktopUxPrep.png)
+![Image of the Neon Reel landing page on mobile](./src/assets/readmeImages/mobileUxPrep.jpg)
+
+
 ## Run Locally:
 
 1. **Clone the repository:**
@@ -33,11 +37,12 @@ UXPrep is a data-driven quiz application designed to help users prepare for Fron
 
 ## Features:
 
-- **Multiple Quizzes:** Covers diverse frontend development topics.
+- **Multiple Quizzes:** Covers diverse frontend development topics
 - **Dynamic Rendering:** Generates questions from TypeScript data using URL parameters
 - **Modern Routing:** Built with React Router for seamless navigation
-- **Scoped Styling:** Used CSS modules to prevent style bleeding when necessary
+- **Scoped Styling:** Uses CSS modules to prevent style bleeding when necessary
 - **Responsive Design:** Fully accessible and mobile friendly
+
 
 
 ## Tech Stack:
@@ -64,7 +69,20 @@ While implementing quiz submission logic, I initially attempted using `useRef` t
 
 
 ### Accessibility Improvements
-During the migration, I revisited portions of the original styling and corrected accessibility concerns, including improved contrast within the mobile navigation menu.
+**Color Contrast:** 
+- Improved contrast within the mobile navigation menu to meet accessibility standards
+- Reviewed existing styling choices to ensure text remained readable across different screen sizes
+
+**Layout:**
+- Improved component organization to create clearer content structure
+- Ensured quiz content scales appropriately across desktop and mobile layouts
+
+**Program Quality and Maintainability:**
+- Separated application logic from quiz data to improve maintainability
+- Converted static sections into reusable React components
+- Used CSS Modules where appropriate to prevent style conflicts
+
+
 
 ### Code Quality
 - Switched unnecessary `let` variable declarations for `const`
