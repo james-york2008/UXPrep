@@ -45,7 +45,15 @@ export default function Quiz({ quizId, quizzes }: Props) {
 
   if (loading) {
     return(
-      <p className={styles.loadingText} aria-live="polite">Loading your quiz</p>
+      <div className={styles.skeletonLoaderWrapper}>
+        <div className={styles.skeletonTitle}></div>
+        <div className={styles.skeletonQuestion}></div>
+        
+        <div className={styles.skeletonAnswer}></div>
+        <div className={styles.skeletonAnswer}></div>
+        <div className={styles.skeletonAnswer}></div>
+        <div className={styles.skeletonAnswer}></div>
+      </div>
     )
   }
 
