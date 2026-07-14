@@ -2,30 +2,30 @@
   {
     "id": "htmlCss",
     "name": "HTML & CSS",
-    "imageLink": "htmlCss.png"
+    "imageLink": "htmlCss.webp"
   },
  
   {
     "id": "javascript",
     "name": "JavaScript",
-    "imageLink": "js.png"
+    "imageLink": "js.webp"
   },
 
   {
     "id": "react",
     "name": "ReactJS",
-    "imageLink": "react.png"
+    "imageLink": "react.webp"
   },
 
   {
     "id": "accessibility",
     "name": "Accessibility",
-    "imageLink": "accessibility.png"
+    "imageLink": "accessibility.webp"
   },
 
   {
     "id": "random",
     "name": "Random",
-    "imageLink": "random.png"
+    "imageLink": "random.webp"
   }
 ]

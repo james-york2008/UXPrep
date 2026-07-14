@@ -1,8 +1,8 @@
 # UXPrep 
 [Live Page](https://james-york2008.github.io/UXPrep/)
 
-![Image of the Neon Reel landing page on desktop](./src/assets/readmeImages/desktopUxPrep.png)
-![Image of the Neon Reel landing page on mobile](./src/assets/readmeImages/mobileUxPrep.jpg)
+![Image of the Neon Reel landing page on desktop](./src/assets/readmeImages/desktopUxPrep.webp)
+![Image of the Neon Reel landing page on mobile](./src/assets/readmeImages/mobileUxPrep.webp)
 
 
 ## Run Locally:
@@ -89,6 +89,7 @@ While implementing quiz submission logic, I initially attempted using `useRef` t
 - Redesigned the rendering logic to remove illegal render-phase side effects
 - Used local inline calculations as opposed to render-phase side effects
 - Replaced an unnecessary `useState` hook with a block scoped constant
+- Converted old `.png` & `.jpg` assets to `.webp`
 
 
 ## Potential Future Improvements: 
