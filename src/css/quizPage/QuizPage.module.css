@@ -66,14 +66,6 @@
     font-weight: 700;
 }
 
-.loadingText {
-    font-size: 1.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-}
-
 .answer {
     margin-bottom: 0.3rem;
 }
