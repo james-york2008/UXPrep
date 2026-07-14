@@ -92,6 +92,11 @@ While implementing quiz submission logic, I initially attempted using `useRef` t
 - Converted old `.png` & `.jpg` assets to `.webp`
 
 
+### Skeleton Loader Addition
+- **Replaced Loading Text:** Swapped out old `"Loading your quiz" text
+- **Modernized CSS Layout:** Added a modern skeleton structure that mirrors the actual layout
+- **Simulated Randomized Simulation:** Used `nth-child` pseudo-classes to alter line widths 
+
 ## Potential Future Improvements: 
 
 - Detailed answer explanations after quiz submission
