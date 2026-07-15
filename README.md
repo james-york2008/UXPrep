@@ -89,7 +89,7 @@ While implementing quiz submission logic, I initially attempted using `useRef` t
 - Redesigned the rendering logic to remove illegal render-phase side effects
 - Used local inline calculations as opposed to render-phase side effects
 - Replaced an unnecessary `useState` hook with a block scoped constant
-- Converted old `.png` & `.jpg` assets to `.webp`
+- Converted old `.png` & `.jpg` assets to `.webp` and later re-encoded corrupted `.webp` headers 
 
 
 ### Skeleton Loader Addition
