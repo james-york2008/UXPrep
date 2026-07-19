@@ -85,6 +85,11 @@
     animation: pulse 1.5s linear infinite;
 }
 
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
 .skeletonTitle {
     height: 1.5rem;
     width: 25%;
@@ -112,11 +117,6 @@
 .skeletonAnswer:nth-child(4n + 2) { width: 85%; }
 .skeletonAnswer:nth-child(4n + 3) { width: 90%; }
 .skeletonAnswer:nth-child(4n + 0) { width: 65%; }
-
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
-}
 
 @media(min-width: 500px) {
     .question {

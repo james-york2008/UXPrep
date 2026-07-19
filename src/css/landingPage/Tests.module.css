@@ -36,9 +36,35 @@
     margin: 1rem;
 }
 
+.skeletonLoaderWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: pulse 1.5s linear infinite;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.skeletonLoader {
+  width: 35vw;
+  height: 25vw;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
 @media (min-width: 700px) {
     .testTitle {
         font-size: 1.3rem;
+    }
+
+    .skeletonLoader {
+        width: 25vw;
+        height: 15vw;
     }
 }
 
@@ -67,4 +93,8 @@
     .tests h2 {
         font-size: 2.5rem;
     }    
+    
+    .skeletonLoader {
+        width: 20vw;
+    }
 }

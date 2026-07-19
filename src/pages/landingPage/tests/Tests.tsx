@@ -38,7 +38,13 @@ export default function Tests () {
 
   if (loading) {
     return (
-      <p>Loading quizzes</p>
+      <div className={styles.skeletonLoaderWrapper}>
+        <div className={styles.skeletonLoader}></div>
+        <div className={styles.skeletonLoader}></div>
+        <div className={styles.skeletonLoader}></div>
+        <div className={styles.skeletonLoader}></div>
+        <div className={styles.skeletonLoader}></div>
+      </div>
     )
   }
   
