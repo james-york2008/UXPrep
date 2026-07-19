@@ -11,7 +11,8 @@
         "Automatically applies better default styles",
         "Improves JavaScript execution speed"
       ],
-      "correctAnswer": "Improves accessibility, SEO, and code maintainability"
+      "correctAnswer": "Improves accessibility, SEO, and code maintainability",
+      "explanation": "Semantic elements such as <header>, <nav>, <main>, <article>, and <footer> provide meaning to the document structure. This helps screen readers understand the page, improves search engine indexing, and makes the code easier for developers to read and maintain."
     },
     {
       "id": "q2",
@@ -22,7 +23,8 @@
         "Inline-block elements are deprecated and should not be used",
         "There is no meaningful difference between them in modern CSS"
       ],
-      "correctAnswer": "Block elements start on a new line, inline elements flow with text, and inline-block allows sizing while staying inline"
+      "correctAnswer": "Block elements start on a new line, inline elements flow with text, and inline-block allows sizing while staying inline",
+      "explanation": "Block elements take up the full available width and begin on a new line. Inline elements flow within surrounding text and do not accept width or height in the same way. Inline-block elements remain inline with text but can be sized with width and height."
     },
     {
       "id": "q3",
@@ -33,7 +35,8 @@
         "Absolute positioning always places elements on top of others and fixed elements scroll normally",
         "Sticky positioning is no longer supported in modern browsers"
       ],
-      "correctAnswer": "Relative keeps normal flow, absolute positions relative to the nearest positioned ancestor, fixed stays relative to viewport, and sticky switches between relative and fixed"
+      "correctAnswer": "Relative keeps normal flow, absolute positions relative to the nearest positioned ancestor, fixed stays relative to viewport, and sticky switches between relative and fixed",
+      "explanation": "Position: relative keeps the element in the normal document flow while allowing offsets. Position: absolute removes the element from normal flow and positions it relative to the nearest ancestor with a non-static position. Position: fixed stays attached to the viewport, and position: sticky behaves relatively until a scroll threshold is reached, then acts like fixed positioning."
     },
     {
       "id": "q4",
@@ -44,7 +47,8 @@
         "To improve CSS styling capabilities",
         "To define responsive breakpoints in HTML"
       ],
-      "correctAnswer": "Only when native HTML elements do not provide sufficient accessibility"
+      "correctAnswer": "Only when native HTML elements do not provide sufficient accessibility",
+      "explanation": "Native semantic HTML elements already provide accessibility information to browsers and assistive technologies. ARIA should be used only when native elements cannot express the required behavior or state, such as with custom widgets."
     },
     {
       "id": "q5",
@@ -55,7 +59,8 @@
         "They are required for flexbox layouts",
         "They prevent layout shifts entirely"
       ],
-      "correctAnswer": "They scale based on context, improving responsiveness and accessibility"
+      "correctAnswer": "They scale based on context, improving responsiveness and accessibility",
+      "explanation": "Relative units adapt to the user’s font size settings, parent element sizes, or viewport dimensions. This makes layouts more responsive across devices and allows users to zoom or adjust text size more effectively, improving accessibility."
     },
     {
       "id": "q6",
@@ -66,7 +71,8 @@
         "External stylesheets for maintainability and caching",
         "Using only !important rules to enforce consistency"
       ],
-      "correctAnswer": "External stylesheets for maintainability and caching"
+      "correctAnswer": "External stylesheets for maintainability and caching",
+      "explanation": "External stylesheets separate presentation from content, making styles easier to maintain across multiple pages. Browsers can also cache external CSS files, reducing load times for returning visitors."
     },
     {
       "id": "q7",
@@ -77,7 +83,8 @@
         "It reduces browser compatibility",
         "It disables media queries"
       ],
-      "correctAnswer": "It breaks the cascade and makes styles difficult to maintain and debug"
+      "correctAnswer": "It breaks the cascade and makes styles difficult to maintain and debug",
+      "explanation": "The CSS cascade is designed to resolve conflicts through specificity and source order. Overusing !important overrides that system, making it harder to predict which styles will apply and increasing maintenance and debugging complexity."
     },
     {
       "id": "q8",
@@ -88,7 +95,8 @@
         "They behave identically in all layout contexts",
         "Viewport units only apply to font sizes"
       ],
-      "correctAnswer": "Viewport units are based on the browser window size, while percentages depend on the parent element"
+      "correctAnswer": "Viewport units are based on the browser window size, while percentages depend on the parent element",
+      "explanation": "Units such as 50vw and 50vh are calculated from the viewport width and height. Percentages are usually calculated relative to the size of the parent element, so the two unit types can produce very different results depending on the layout context."
     },
     {
       "id": "q9",
@@ -99,7 +107,8 @@
         "Content-box is only used in flexbox layouts",
         "Border-box is deprecated in modern CSS"
       ],
-      "correctAnswer": "Border-box includes content, padding, and border within the declared width, while content-box does not"
+      "correctAnswer": "Border-box includes content, padding, and border within the declared width, while content-box does not",
+      "explanation": "With content-box (the default), the declared width applies only to the content area, and padding and border are added on top. With border-box, the declared width includes the content, padding, and border, which makes layout calculations more predictable."
     },
     {
       "id": "q10",
@@ -110,7 +119,8 @@
         "It is required for CSS grid layouts to function",
         "It ensures JavaScript event listeners work correctly"
       ],
-      "correctAnswer": "It improves accessibility, SEO, and provides meaningful document structure"
+      "correctAnswer": "It improves accessibility, SEO, and provides meaningful document structure",
+      "explanation": "Headings create a logical outline of the page. Screen reader users often navigate by headings, and search engines use them to understand content structure. A proper hierarchy makes the document easier to navigate and interpret for both users and automated tools."
     }
   ]
 }
