@@ -11,7 +11,8 @@
         "let is global while var and const are local",
         "const can be reassigned but let cannot"
       ],
-      "correctAnswer": "var is function-scoped while let and const are block-scoped, and const cannot be reassigned"
+      "correctAnswer": "var is function-scoped while let and const are block-scoped, and const cannot be reassigned",
+      "explanation": "The var keyword is function-scoped and is hoisted with an initial value of undefined. The let and const keywords are block-scoped and exist in the temporal dead zone until declared. Variables declared with const cannot be reassigned, although the contents of objects and arrays declared with const can still be modified."
     },
     {
       "id": "q2",
@@ -22,7 +23,8 @@
         "A way to stop a function from executing",
         "A method used to close event listeners"
       ],
-      "correctAnswer": "A function that has access to its own scope, the outer function’s scope, and the global scope"
+      "correctAnswer": "A function that has access to its own scope, the outer function’s scope, and the global scope",
+      "explanation": "A closure is created when a function remembers the variables from its lexical scope even after the outer function has finished executing. Closures are commonly used for data privacy, callbacks, and factory functions."
     },
     {
       "id": "q3",
@@ -33,7 +35,8 @@
         "It will automatically initialize to null",
         "It will behave the same as var"
       ],
-      "correctAnswer": "It will throw a ReferenceError due to the temporal dead zone"
+      "correctAnswer": "It will throw a ReferenceError due to the temporal dead zone",
+      "explanation": "Variables declared with let and const are hoisted but cannot be accessed before their declaration. This period is called the Temporal Dead Zone (TDZ), and attempting to access the variable during this time throws a ReferenceError."
     },
     {
       "id": "q4",
@@ -44,7 +47,8 @@
         "There is no difference between them",
         "== is deprecated in modern JavaScript"
       ],
-      "correctAnswer": "=== compares both value and type, while == performs type coercion before comparison"
+      "correctAnswer": "=== compares both value and type, while == performs type coercion before comparison",
+      "explanation": "The strict equality operator (===) compares both value and data type without converting operands. The loose equality operator (==) performs type coercion before comparison, which can lead to unexpected results. Using === is generally considered best practice."
     },
     {
       "id": "q5",
@@ -55,7 +59,8 @@
         "It moves completed async tasks from the callback queue to the call stack when it is empty",
         "It blocks execution until async tasks are finished"
       ],
-      "correctAnswer": "It moves completed async tasks from the callback queue to the call stack when it is empty"
+      "correctAnswer": "It moves completed async tasks from the callback queue to the call stack when it is empty",
+      "explanation": "JavaScript executes synchronous code first. Asynchronous operations are handled by browser or Node.js APIs, and once complete, their callbacks are placed in a queue. The event loop moves callbacks from the queue to the call stack only when the stack is empty."
     },
     {
       "id": "q6",
@@ -66,7 +71,8 @@
         "It refers to the parent function scope",
         "It always refers to the DOM element"
       ],
-      "correctAnswer": "It refers to the object that is currently executing the function"
+      "correctAnswer": "It refers to the object that is currently executing the function",
+      "explanation": "The value of this depends on how a function is called. In object methods, it usually refers to the object itself. In constructors, it refers to the newly created instance. Arrow functions do not have their own this and instead inherit it from the surrounding scope."
     },
     {
       "id": "q7",
@@ -77,7 +83,8 @@
         "They are completely interchangeable",
         "null is automatically assigned by JavaScript in all cases"
       ],
-      "correctAnswer": "null is an assigned value representing no value, while undefined means a variable has been declared but not assigned"
+      "correctAnswer": "null is an assigned value representing no value, while undefined means a variable has been declared but not assigned",
+      "explanation": "Undefined is the default value for variables that have been declared but not initialized, as well as missing object properties and function parameters. Null is an intentional assignment that represents the absence of a value."
     },
     {
       "id": "q8",
@@ -88,7 +95,8 @@
         "It filters elements out of an array",
         "It sorts the array in place"
       ],
-      "correctAnswer": "It creates a new array by applying a function to each element"
+      "correctAnswer": "It creates a new array by applying a function to each element",
+      "explanation": "The map() method iterates over every element in an array, applies a callback function, and returns a new array containing the transformed values. It does not modify the original array."
     },
     {
       "id": "q9",
@@ -99,7 +107,8 @@
         "Asynchronous code always runs faster than synchronous code",
         "There is no difference in JavaScript"
       ],
-      "correctAnswer": "Synchronous code blocks execution until complete, while asynchronous code allows other operations to run before completion"
+      "correctAnswer": "Synchronous code blocks execution until complete, while asynchronous code allows other operations to run before completion",
+      "explanation": "Synchronous code executes one statement at a time, blocking further execution until each operation completes. Asynchronous code allows long-running tasks, such as network requests or timers, to complete in the background while the program continues executing other code."
     },
     {
       "id": "q10",
@@ -110,7 +119,8 @@
         "To make synchronous code run faster",
         "To store data permanently in memory"
       ],
-      "correctAnswer": "To handle asynchronous operations and represent a future value or error"
+      "correctAnswer": "To handle asynchronous operations and represent a future value or error",
+      "explanation": "A Promise represents the eventual completion or failure of an asynchronous operation. It can be in one of three states: pending, fulfilled, or rejected. Promises improve readability compared to nested callbacks and work seamlessly with async/await."
     }
   ]
-} 
+}
