@@ -93,7 +93,7 @@ While implementing quiz submission logic, I initially attempted using `useRef` t
 
 
 ### Skeleton Loader Addition
-- **Replaced Loading Text:** Swapped out old `"Loading your quiz" text
+- **Replaced Loading Text:** Swapped out old `Loading your quiz` text
 - **Modernized CSS Layout:** Added a modern skeleton structure that mirrors the actual layout
 - **Simulated Randomized Simulation:** Used `nth-child` pseudo-classes to alter line widths 
 
