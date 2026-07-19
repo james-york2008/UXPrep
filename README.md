@@ -99,7 +99,6 @@ While implementing quiz submission logic, I initially attempted using `useRef` t
 
 ## Potential Future Improvements: 
 
-- Detailed answer explanations after quiz submission
 - Timer-based quiz modes
 - Expanded question database
 - Difficulty section for quizzes
