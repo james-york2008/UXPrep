@@ -28,6 +28,7 @@ export default function Questions ({ data, results }: Props)  {
                 </div>
               )
             })}
+            <p>{results !== null && question.explanation}</p>
           </div>
         </fieldset>
       ))}  

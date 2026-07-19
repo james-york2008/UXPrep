@@ -2,5 +2,6 @@ export type Question = {
   id: string,
   question: string,
   options: string[],
-  correctAnswer: string
+  correctAnswer: string,
+  explanation: string
 }

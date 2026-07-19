@@ -11,7 +11,8 @@
         "To improve CSS styling in React apps",
         "To enforce class-based component usage"
       ],
-      "correctAnswer": "To allow state and lifecycle features in functional components"
+      "correctAnswer": "To allow state and lifecycle features in functional components",
+      "explanation": "Hooks allow functional components to use state, side effects, context, refs, and other React features that previously required class components. This makes components easier to write, reuse, and test."
     },
     {
       "id": "q2",
@@ -22,7 +23,8 @@
         "useState is asynchronous while useReducer is synchronous",
         "There is no difference between them"
       ],
-      "correctAnswer": "useReducer is better suited for complex state logic, while useState is simpler"
+      "correctAnswer": "useReducer is better suited for complex state logic, while useState is simpler",
+      "explanation": "useState is ideal for simple pieces of state, while useReducer is better for managing complex state transitions or multiple related state values. It centralizes update logic in a reducer function, making it easier to maintain."
     },
     {
       "id": "q3",
@@ -33,7 +35,8 @@
         "How many times the component re-renders",
         "Whether the component uses state or props"
       ],
-      "correctAnswer": "When the effect runs based on changes to specified values"
+      "correctAnswer": "When the effect runs based on changes to specified values",
+      "explanation": "The dependency array tells React when to re-run an effect. An empty array runs the effect once after the initial render, omitted dependencies run it after every render, and specified dependencies cause it to run only when those values change."
     },
     {
       "id": "q4",
@@ -44,7 +47,8 @@
         "A browser API for DOM manipulation",
         "A replacement for HTML"
       ],
-      "correctAnswer": "A lightweight copy of the real DOM used to optimize updates"
+      "correctAnswer": "A lightweight copy of the real DOM used to optimize updates",
+      "explanation": "The Virtual DOM is an in-memory representation of the UI. When state changes, React compares the new Virtual DOM with the previous one (a process called reconciliation) and updates only the necessary parts of the real DOM, improving performance."
     },
     {
       "id": "q5",
@@ -55,7 +59,8 @@
         "They allow components to share state",
         "They are required for event handling"
       ],
-      "correctAnswer": "They help React identify which elements have changed for efficient re-rendering"
+      "correctAnswer": "They help React identify which elements have changed for efficient re-rendering",
+      "explanation": "Keys give each list item a stable identity so React can efficiently determine which items were added, removed, or reordered. Using unique, stable keys helps preserve component state and minimizes unnecessary re-renders."
     },
     {
       "id": "q6",
@@ -66,7 +71,8 @@
         "A method of optimizing component rendering",
         "A way to fetch data from APIs"
       ],
-      "correctAnswer": "Passing props deeply through multiple components unnecessarily"
+      "correctAnswer": "Passing props deeply through multiple components unnecessarily",
+      "explanation": "Prop drilling occurs when data must be passed through several intermediate components that don't actually use it, just so a deeply nested component can access it. Context or state management libraries are common solutions when this becomes excessive."
     },
     {
       "id": "q7",
@@ -77,7 +83,8 @@
         "To manage side effects",
         "To handle asynchronous code"
       ],
-      "correctAnswer": "To prevent unnecessary re-renders of functional components based on props"
+      "correctAnswer": "To prevent unnecessary re-renders of functional components based on props",
+      "explanation": "React.memo is a higher-order component that memoizes a functional component. If its props haven't changed, React can skip rendering it, improving performance in situations where rendering is expensive."
     },
     {
       "id": "q8",
@@ -88,7 +95,8 @@
         "Uncontrolled components are deprecated",
         "There is no difference"
       ],
-      "correctAnswer": "Controlled components use React state, uncontrolled components rely on the DOM"
+      "correctAnswer": "Controlled components use React state, uncontrolled components rely on the DOM",
+      "explanation": "A controlled component stores form values in React state and updates them with event handlers, making React the single source of truth. An uncontrolled component lets the DOM manage the value, typically accessed using refs."
     },
     {
       "id": "q9",
@@ -99,7 +107,8 @@
         "Component re-renders entirely",
         "Using external libraries"
       ],
-      "correctAnswer": "Prop drilling by providing a way to share values across components"
+      "correctAnswer": "Prop drilling by providing a way to share values across components",
+      "explanation": "useContext allows components to consume shared values directly from a Context provider without passing props through every intermediate component. This simplifies component hierarchies and reduces prop drilling."
     },
     {
       "id": "q10",
@@ -110,7 +119,8 @@
         "It eliminates the need for state management",
         "It simplifies JSX syntax"
       ],
-      "correctAnswer": "It improves performance by loading code only when needed"
+      "correctAnswer": "It improves performance by loading code only when needed",
+      "explanation": "Code splitting divides an application into smaller JavaScript bundles that are loaded on demand. This reduces the initial bundle size, speeds up page loads, and improves the user experience. React commonly supports this with React.lazy() and Suspense."
     }
   ]
 }

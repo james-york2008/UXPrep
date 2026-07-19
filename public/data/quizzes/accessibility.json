@@ -11,7 +11,8 @@
         "To improve website performance",
         "To reduce development time"
       ],
-      "correctAnswer": "To ensure websites are usable by people with disabilities"
+      "correctAnswer": "To ensure websites are usable by people with disabilities",
+      "explanation": "Web accessibility ensures that people with disabilities can perceive, understand, navigate, and interact with websites. Accessible design also often improves usability for everyone."
     },
     {
       "id": "q2",
@@ -22,7 +23,8 @@
         "Worldwide Content Accessibility Group",
         "Web Coding Accessibility Guidelines"
       ],
-      "correctAnswer": "Web Content Accessibility Guidelines"
+      "correctAnswer": "Web Content Accessibility Guidelines",
+      "explanation": "WCAG stands for Web Content Accessibility Guidelines, the internationally recognized standard for making web content accessible to people with disabilities."
     },
     {
       "id": "q3",
@@ -33,7 +35,8 @@
         "Only for styling purposes",
         "Only in JavaScript frameworks"
       ],
-      "correctAnswer": "Only when native HTML elements do not provide sufficient accessibility"
+      "correctAnswer": "Only when native HTML elements do not provide sufficient accessibility",
+      "explanation": "Semantic HTML should always be the first choice because browsers and assistive technologies understand it natively. ARIA should only be added when native HTML cannot provide the necessary accessibility information."
     },
     {
       "id": "q4",
@@ -44,7 +47,8 @@
         "To style images with CSS",
         "To define image dimensions"
       ],
-      "correctAnswer": "To provide alternative text for screen readers and when images fail to load"
+      "correctAnswer": "To provide alternative text for screen readers and when images fail to load",
+      "explanation": "The alt attribute describes the content or purpose of an image, allowing screen reader users to understand it and providing fallback text if the image cannot be displayed."
     },
     {
       "id": "q5",
@@ -55,7 +59,8 @@
         "It makes animations smoother",
         "It reduces page load time"
       ],
-      "correctAnswer": "Some users rely on keyboards or assistive technologies instead of a mouse"
+      "correctAnswer": "Some users rely on keyboards or assistive technologies instead of a mouse",
+      "explanation": "Many users cannot use a mouse due to physical disabilities or personal preference. Ensuring all functionality is accessible via keyboard is a core accessibility requirement."
     },
     {
       "id": "q6",
@@ -66,7 +71,8 @@
         "It slows down rendering",
         "It breaks responsive layouts"
       ],
-      "correctAnswer": "It can make content inaccessible to users with color vision deficiencies"
+      "correctAnswer": "It can make content inaccessible to users with color vision deficiencies",
+      "explanation": "Users with color blindness or low vision may not be able to distinguish certain colors. Important information should always be communicated using additional cues such as text, icons, or patterns."
     },
     {
       "id": "q7",
@@ -77,7 +83,8 @@
         "The main heading of the page",
         "The element with the highest z-index"
       ],
-      "correctAnswer": "The element currently selected for keyboard interaction"
+      "correctAnswer": "The element currently selected for keyboard interaction",
+      "explanation": "Keyboard focus indicates which interactive element will receive keyboard input. A visible focus indicator helps users navigate pages without relying on a mouse."
     },
     {
       "id": "q8",
@@ -88,7 +95,8 @@
         "Removing all validation messages",
         "Using only icons without text"
       ],
-      "correctAnswer": "Associating labels explicitly with form controls"
+      "correctAnswer": "Associating labels explicitly with form controls",
+      "explanation": "Properly associated labels help screen readers announce the purpose of each form control and improve usability for all users. Placeholder text should not replace labels."
     },
     {
       "id": "q9",
@@ -99,7 +107,8 @@
         "To improve animation performance",
         "To hide navigation menus"
       ],
-      "correctAnswer": "To allow users to bypass repetitive navigation and jump to main content"
+      "correctAnswer": "To allow users to bypass repetitive navigation and jump to main content",
+      "explanation": "Skip links allow keyboard and screen reader users to bypass repeated navigation menus and quickly reach the main content of a page, improving efficiency."
     },
     {
       "id": "q10",
@@ -110,7 +119,8 @@
         "Improved JavaScript execution",
         "Consistent layout spacing"
       ],
-      "correctAnswer": "Better visibility and readability for users, including those with visual impairments"
+      "correctAnswer": "Better visibility and readability for users, including those with visual impairments",
+      "explanation": "Adequate contrast between text and its background makes content easier to read for users with low vision, color vision deficiencies, and in challenging lighting conditions. WCAG defines minimum contrast ratios for accessible text."
     }
   ]
 }
