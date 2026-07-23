@@ -1,126 +1,201 @@
 {
   "id": "accessibility",
-  "title": "Accessibility (a11y)",
+  "title": "Accessibility",
   "questions": [
     {
       "id": "q1",
-      "question": "What is the primary goal of web accessibility?",
+      "category": "WCAG",
+      "question": "Which WCAG principle states that users must be able to operate all interface components?",
       "options": [
-        "To make websites visually appealing",
-        "To ensure websites are usable by people with disabilities",
-        "To improve website performance",
-        "To reduce development time"
+        "Perceivable",
+        "Operable",
+        "Understandable",
+        "Robust"
       ],
-      "correctAnswer": "To ensure websites are usable by people with disabilities",
-      "explanation": "Web accessibility ensures that people with disabilities can perceive, understand, navigate, and interact with websites. Accessible design also often improves usability for everyone."
+      "correctAnswer": "Operable",
+      "explanation": "Operable means users can interact with all functionality. This includes keyboard accessibility, enough time to complete tasks, avoiding seizure-inducing content, and clear navigation."
     },
     {
       "id": "q2",
-      "question": "What does WCAG stand for?",
+      "category": "Semantic HTML",
+      "question": "Which element should be used for a clickable action that submits a form?",
       "options": [
-        "Web Content Accessibility Guidelines",
-        "Web Compliance and Accessibility Guide",
-        "Worldwide Content Accessibility Group",
-        "Web Coding Accessibility Guidelines"
+        "<a>",
+        "<div>",
+        "<button>",
+        "<span>"
       ],
-      "correctAnswer": "Web Content Accessibility Guidelines",
-      "explanation": "WCAG stands for Web Content Accessibility Guidelines, the internationally recognized standard for making web content accessible to people with disabilities."
+      "correctAnswer": "<button>",
+      "explanation": "Buttons provide built-in keyboard support, proper semantics, and accessibility APIs. Developers often misuse links or divs for actions."
     },
     {
       "id": "q3",
-      "question": "When should ARIA roles and attributes be used?",
+      "category": "ARIA",
+      "question": "Which statement about ARIA is TRUE?",
       "options": [
-        "Always, instead of semantic HTML",
-        "Only when native HTML elements do not provide sufficient accessibility",
-        "Only for styling purposes",
-        "Only in JavaScript frameworks"
+        "ARIA improves accessibility in every situation.",
+        "ARIA should replace semantic HTML whenever possible.",
+        "No ARIA is better than bad ARIA.",
+        "ARIA automatically fixes keyboard accessibility."
       ],
-      "correctAnswer": "Only when native HTML elements do not provide sufficient accessibility",
-      "explanation": "Semantic HTML should always be the first choice because browsers and assistive technologies understand it natively. ARIA should only be added when native HTML cannot provide the necessary accessibility information."
+      "correctAnswer": "No ARIA is better than bad ARIA.",
+      "explanation": "Improper ARIA frequently creates accessibility barriers. Native HTML should always be the first choice."
     },
     {
       "id": "q4",
-      "question": "What is the purpose of the alt attribute on images?",
+      "category": "Keyboard",
+      "question": "Which keyboard interaction is expected for a native button?",
       "options": [
-        "To improve image loading speed",
-        "To provide alternative text for screen readers and when images fail to load",
-        "To style images with CSS",
-        "To define image dimensions"
+        "Enter only",
+        "Space only",
+        "Enter and Space",
+        "Arrow keys"
       ],
-      "correctAnswer": "To provide alternative text for screen readers and when images fail to load",
-      "explanation": "The alt attribute describes the content or purpose of an image, allowing screen reader users to understand it and providing fallback text if the image cannot be displayed."
+      "correctAnswer": "Enter and Space",
+      "explanation": "Native buttons activate using both Enter and Space. Custom controls should replicate this behavior."
     },
     {
       "id": "q5",
-      "question": "Why is keyboard accessibility important?",
+      "category": "Focus",
+      "question": "A modal dialog opens. What should happen immediately?",
       "options": [
-        "It improves SEO rankings",
-        "Some users rely on keyboards or assistive technologies instead of a mouse",
-        "It makes animations smoother",
-        "It reduces page load time"
+        "Nothing.",
+        "Focus should remain on the triggering button.",
+        "Focus should move into the dialog.",
+        "Focus should move to the browser address bar."
       ],
-      "correctAnswer": "Some users rely on keyboards or assistive technologies instead of a mouse",
-      "explanation": "Many users cannot use a mouse due to physical disabilities or personal preference. Ensuring all functionality is accessible via keyboard is a core accessibility requirement."
+      "correctAnswer": "Focus should move into the dialog.",
+      "explanation": "Users navigating with keyboards or assistive technologies should immediately interact with the dialog without tabbing through the underlying page."
     },
     {
       "id": "q6",
-      "question": "What is a common issue with using only color to convey information?",
+      "category": "Focus",
+      "question": "When a modal dialog closes, where should keyboard focus generally return?",
       "options": [
-        "It increases file size",
-        "It can make content inaccessible to users with color vision deficiencies",
-        "It slows down rendering",
-        "It breaks responsive layouts"
+        "The first heading",
+        "The browser window",
+        "The element that opened the dialog",
+        "The page footer"
       ],
-      "correctAnswer": "It can make content inaccessible to users with color vision deficiencies",
-      "explanation": "Users with color blindness or low vision may not be able to distinguish certain colors. Important information should always be communicated using additional cues such as text, icons, or patterns."
+      "correctAnswer": "The element that opened the dialog",
+      "explanation": "Returning focus maintains context and prevents keyboard users from becoming lost."
     },
     {
       "id": "q7",
-      "question": "What does 'focus' refer to in web accessibility?",
+      "category": "Forms",
+      "question": "Which implementation correctly associates a label with an input?",
       "options": [
-        "The currently visible section of a page",
-        "The element currently selected for keyboard interaction",
-        "The main heading of the page",
-        "The element with the highest z-index"
+        "<label>Name</label><input>",
+        "<label for='name'>Name</label><input id='name'>",
+        "placeholder='Name'",
+        "title='Name'"
       ],
-      "correctAnswer": "The element currently selected for keyboard interaction",
-      "explanation": "Keyboard focus indicates which interactive element will receive keyboard input. A visible focus indicator helps users navigate pages without relying on a mouse."
+      "correctAnswer": "<label for='name'>Name</label><input id='name'>",
+      "explanation": "Explicit label associations provide the most reliable support across browsers and assistive technologies."
     },
     {
       "id": "q8",
-      "question": "Which practice improves accessibility for form inputs?",
+      "category": "Images",
+      "question": "A purely decorative image should use which alt attribute?",
       "options": [
-        "Using placeholder text instead of labels",
-        "Associating labels explicitly with form controls",
-        "Removing all validation messages",
-        "Using only icons without text"
+        "alt='decorative image'",
+        "No alt attribute",
+        "alt=''",
+        "aria-hidden='false'"
       ],
-      "correctAnswer": "Associating labels explicitly with form controls",
-      "explanation": "Properly associated labels help screen readers announce the purpose of each form control and improve usability for all users. Placeholder text should not replace labels."
+      "correctAnswer": "alt=''",
+      "explanation": "Decorative images should have empty alt text so screen readers ignore them."
     },
     {
       "id": "q9",
-      "question": "What is the purpose of skip navigation links?",
+      "category": "Accessible Names",
+      "question": "Which source has the highest priority when computing an element's accessible name?",
       "options": [
-        "To skip loading JavaScript files",
-        "To allow users to bypass repetitive navigation and jump to main content",
-        "To improve animation performance",
-        "To hide navigation menus"
+        "Placeholder",
+        "aria-labelledby",
+        "title",
+        "Visible text"
       ],
-      "correctAnswer": "To allow users to bypass repetitive navigation and jump to main content",
-      "explanation": "Skip links allow keyboard and screen reader users to bypass repeated navigation menus and quickly reach the main content of a page, improving efficiency."
+      "correctAnswer": "aria-labelledby",
+      "explanation": "The Accessible Name and Description Computation gives aria-labelledby the highest precedence."
     },
     {
       "id": "q10",
-      "question": "What does a sufficient color contrast ratio ensure?",
+      "category": "Contrast",
+      "question": "According to WCAG AA, what is the minimum contrast ratio required for normal text?",
       "options": [
-        "Faster rendering times",
-        "Better visibility and readability for users, including those with visual impairments",
-        "Improved JavaScript execution",
-        "Consistent layout spacing"
+        "3:1",
+        "4.5:1",
+        "5:1",
+        "7:1"
       ],
-      "correctAnswer": "Better visibility and readability for users, including those with visual impairments",
-      "explanation": "Adequate contrast between text and its background makes content easier to read for users with low vision, color vision deficiencies, and in challenging lighting conditions. WCAG defines minimum contrast ratios for accessible text."
+      "correctAnswer": "4.5:1",
+      "explanation": "Normal text requires at least 4.5:1 at Level AA. Large text requires 3:1."
+    },
+    {
+      "id": "q11",
+      "category": "Contrast",
+      "question": "Large text under WCAG AA requires a minimum contrast ratio of:",
+      "options": [
+        "2:1",
+        "3:1",
+        "4.5:1",
+        "7:1"
+      ],
+      "correctAnswer": "3:1",
+      "explanation": "Large text is at least 18pt (or 14pt bold) and may use a 3:1 ratio."
+    },
+    {
+      "id": "q12",
+      "category": "Screen Readers",
+      "question": "Why is heading hierarchy important?",
+      "options": [
+        "Improves SEO only",
+        "Allows screen reader users to navigate page structure efficiently",
+        "Makes pages load faster",
+        "Improves CSS specificity"
+      ],
+      "correctAnswer": "Allows screen reader users to navigate page structure efficiently",
+      "explanation": "Screen reader users frequently navigate by headings to understand document organization."
+    },
+    {
+      "id": "q13",
+      "category": "Tables",
+      "question": "Which table element identifies column headers?",
+      "options": [
+        "<thead>",
+        "<caption>",
+        "<th>",
+        "<td>"
+      ],
+      "correctAnswer": "<th>",
+      "explanation": "Header cells should use <th>, often with scope attributes."
+    },
+    {
+      "id": "q14",
+      "category": "Dynamic Content",
+      "question": "Which ARIA attribute announces changing content without moving keyboard focus?",
+      "options": [
+        "aria-modal",
+        "aria-live",
+        "aria-hidden",
+        "aria-current"
+      ],
+      "correctAnswer": "aria-live",
+      "explanation": "Live regions notify assistive technologies when dynamic content changes."
+    },
+    {
+      "id": "q15",
+      "category": "WCAG 2.2",
+      "question": "Which new WCAG 2.2 requirement helps ensure interactive controls are easier to activate on touch devices?",
+      "options": [
+        "Focus Appearance",
+        "Dragging Movements",
+        "Target Size (Minimum)",
+        "Accessible Authentication"
+      ],
+      "correctAnswer": "Target Size (Minimum)",
+      "explanation": "WCAG 2.2 introduced minimum target size requirements to improve usability for users with limited dexterity."
     }
   ]
 }
