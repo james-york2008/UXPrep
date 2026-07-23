@@ -4,7 +4,6 @@
   "questions": [
     {
       "id": "q1",
-      "category": "WCAG",
       "question": "Which WCAG principle states that users must be able to operate all interface components?",
       "options": [
         "Perceivable",
@@ -17,7 +16,6 @@
     },
     {
       "id": "q2",
-      "category": "Semantic HTML",
       "question": "Which element should be used for a clickable action that submits a form?",
       "options": [
         "<a>",
@@ -30,7 +28,6 @@
     },
     {
       "id": "q3",
-      "category": "ARIA",
       "question": "Which statement about ARIA is TRUE?",
       "options": [
         "ARIA improves accessibility in every situation.",
@@ -43,7 +40,6 @@
     },
     {
       "id": "q4",
-      "category": "Keyboard",
       "question": "Which keyboard interaction is expected for a native button?",
       "options": [
         "Enter only",
@@ -56,7 +52,6 @@
     },
     {
       "id": "q5",
-      "category": "Focus",
       "question": "A modal dialog opens. What should happen immediately?",
       "options": [
         "Nothing.",
@@ -69,7 +64,6 @@
     },
     {
       "id": "q6",
-      "category": "Focus",
       "question": "When a modal dialog closes, where should keyboard focus generally return?",
       "options": [
         "The first heading",
@@ -82,7 +76,6 @@
     },
     {
       "id": "q7",
-      "category": "Forms",
       "question": "Which implementation correctly associates a label with an input?",
       "options": [
         "<label>Name</label><input>",
@@ -95,7 +88,6 @@
     },
     {
       "id": "q8",
-      "category": "Images",
       "question": "A purely decorative image should use which alt attribute?",
       "options": [
         "alt='decorative image'",
@@ -108,7 +100,6 @@
     },
     {
       "id": "q9",
-      "category": "Accessible Names",
       "question": "Which source has the highest priority when computing an element's accessible name?",
       "options": [
         "Placeholder",
@@ -121,7 +112,6 @@
     },
     {
       "id": "q10",
-      "category": "Contrast",
       "question": "According to WCAG AA, what is the minimum contrast ratio required for normal text?",
       "options": [
         "3:1",
@@ -134,7 +124,6 @@
     },
     {
       "id": "q11",
-      "category": "Contrast",
       "question": "Large text under WCAG AA requires a minimum contrast ratio of:",
       "options": [
         "2:1",
@@ -147,7 +136,6 @@
     },
     {
       "id": "q12",
-      "category": "Screen Readers",
       "question": "Why is heading hierarchy important?",
       "options": [
         "Improves SEO only",
@@ -160,7 +148,6 @@
     },
     {
       "id": "q13",
-      "category": "Tables",
       "question": "Which table element identifies column headers?",
       "options": [
         "<thead>",
@@ -173,7 +160,6 @@
     },
     {
       "id": "q14",
-      "category": "Dynamic Content",
       "question": "Which ARIA attribute announces changing content without moving keyboard focus?",
       "options": [
         "aria-modal",
@@ -186,7 +172,6 @@
     },
     {
       "id": "q15",
-      "category": "WCAG 2.2",
       "question": "Which new WCAG 2.2 requirement helps ensure interactive controls are easier to activate on touch devices?",
       "options": [
         "Focus Appearance",
