@@ -45,6 +45,13 @@
     gap: 1.5rem;
 }
 
+@media(prefers-reduced-motion: reduce) {
+    .skeletonLoaderWrapper {
+        animation: none;
+        opacity: 0.5;
+    }
+}
+
 .skeletonLoader {
   width: 35vw;
   height: 25vw;
