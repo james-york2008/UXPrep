@@ -85,10 +85,22 @@
     animation: pulse 1.5s linear infinite;
 }
 
+@media(prefers-reduced-motion: reduce) {
+    .skeletonQuestionWrapper {
+        animation: none;
+        opacity: 0.5;
+    }
+}
+
+.skeletonQuestionWrapper {
+    margin-top: 1rem;
+}
+
 @keyframes pulse {
-    0%, 100% { opacity: 1; }
+    0%, 100% { opacity: 0.7; }
     50% { opacity: 0.3; }
 }
+
 
 .skeletonTitle {
     height: 1.5rem;
@@ -139,6 +151,10 @@
     }
 
     .test {
+        margin: 0 7rem;
+    }
+
+    .skeletonLoaderWrapper {
         margin: 0 7rem;
     }
 

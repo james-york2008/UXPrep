@@ -77,11 +77,14 @@ While implementing quiz submission logic, I initially attempted using `useRef` t
 - Improved component organization to create clearer content structure
 - Ensured quiz content scales appropriately across desktop and mobile layouts
 
-**Program Quality and Maintainability:**
+**Reduced Motion Option:**
+- Used the `prefers-reduced-motion` media query to remove the pulsing animation on skeleton loaders and the scrolling animation on navigation links
+
+
+### Program Quality and Maintainability
 - Separated application logic from quiz data to improve maintainability
 - Converted static sections into reusable React components
 - Used CSS Modules where appropriate to prevent style conflicts
-
 
 
 ### Code Quality
@@ -96,6 +99,7 @@ While implementing quiz submission logic, I initially attempted using `useRef` t
 - **Replaced Loading Text:** Swapped out old `Loading your quiz` text
 - **Modernized CSS Layout:** Added a modern skeleton structure that mirrors the actual layout
 - **Simulated Randomized Simulation:** Used `nth-child` pseudo-classes to alter line widths 
+- **Accurate widths:** Later adjusted skeleton loader widths to fit content widths more closely
 
 ## Potential Future Improvements: 
 

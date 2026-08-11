@@ -47,13 +47,47 @@ export default function Quiz({ quizId, quizzes }: Props) {
     return(
       <div className={styles.skeletonLoaderWrapper}>
         <div className={styles.skeletonTitle}></div>
-        <div className={styles.skeletonQuestion}></div>
+ 
+        <div className={styles.skeletonQuestionWrapper}>
+          <div className={styles.skeletonQuestion}></div>       
+          <div className={styles.skeletonAnswer}></div>
+          <div className={styles.skeletonAnswer}></div>
+          <div className={styles.skeletonAnswer}></div>
+          <div className={styles.skeletonAnswer}></div>
+        </div>
         
+        <div className={styles.skeletonQuestionWrapper}>
+          <div className={styles.skeletonQuestion}></div>       
+          <div className={styles.skeletonAnswer}></div>
+          <div className={styles.skeletonAnswer}></div>
+          <div className={styles.skeletonAnswer}></div>
+          <div className={styles.skeletonAnswer}></div>
+        </div>
+        
+        <div className={styles.skeletonQuestionWrapper}>
+          <div className={styles.skeletonQuestion}></div>       
+          <div className={styles.skeletonAnswer}></div>
+          <div className={styles.skeletonAnswer}></div>
+          <div className={styles.skeletonAnswer}></div>
+          <div className={styles.skeletonAnswer}></div>
+        </div>
+
+        <div className={styles.skeletonQuestionWrapper}>
+        <div className={styles.skeletonQuestion}></div>       
         <div className={styles.skeletonAnswer}></div>
         <div className={styles.skeletonAnswer}></div>
         <div className={styles.skeletonAnswer}></div>
         <div className={styles.skeletonAnswer}></div>
       </div>
+
+        <div className={styles.skeletonQuestionWrapper}>
+        <div className={styles.skeletonQuestion}></div>       
+        <div className={styles.skeletonAnswer}></div>
+        <div className={styles.skeletonAnswer}></div>
+        <div className={styles.skeletonAnswer}></div>
+        <div className={styles.skeletonAnswer}></div>
+      </div>
+  </div>
     )
   }
 
