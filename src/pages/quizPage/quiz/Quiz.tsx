@@ -17,6 +17,8 @@ export default function Quiz({ quizId, quizzes }: Props) {
   useEffect(() => {
 
     const loadQuiz = async () => {
+      window.scrollTo(0, 0)
+      
       try {
         const updatedQuizId = quizId === "random" 
           ? quizzes[Math.floor(Math.random() * quizzes.length)]
