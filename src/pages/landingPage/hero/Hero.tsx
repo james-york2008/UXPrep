@@ -1,5 +1,5 @@
-import heroImage from '../../../assets/heroImage.webp'
-import styles from '../../../css/landingPage/Hero.module.css'
+import heroImage from "../../../assets/heroImage.webp"
+import styles from "../../../css/landingPage/Hero.module.css"
 
 export default function Hero () {
   return(

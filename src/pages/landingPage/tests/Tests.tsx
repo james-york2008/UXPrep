@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom'
-import styles from '../../../css/landingPage/Tests.module.css'
-import { useEffect, useState } from 'react'
-import type { LandingPageTest } from '../../../types/landingPage/LandingPageTest'
+import { Link } from "react-router-dom"
+import styles from "../../../css/landingPage/Tests.module.css"
+import { useEffect, useState } from "react"
+import type { LandingPageTest } from "../../../types/landingPage/LandingPageTest"
 
 const testIcons: Record<string, string> = import.meta.glob(
-  '../../../assets/testIcons/*',
+  "../../../assets/testIcons/*",
   {
     eager: true,
-    import: 'default'
+    import: "default"
   }
 )
 
@@ -18,7 +18,7 @@ export default function Tests () {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/UXPrep/data/landingPageTests.json')
+        const res = await fetch("/UXPrep/data/landingPageTests.json")
       
         if (!res.ok) {
           throw new Error(`HTTP ${res.status}`)
@@ -49,7 +49,7 @@ export default function Tests () {
   }
   
   return(
-    <section className={styles.tests} id='tests'>
+    <section className={styles.tests} id="tests">
       <h2>Choose a quiz topic</h2>
 
       <ul className={styles.testsList}>
@@ -60,7 +60,7 @@ export default function Tests () {
             <li key={test.id}>
               <article className={styles.test}>
                 <Link to={`/UXPrep/quiz/${test.id}`}>
-                  <img src={testIcon} alt='' aria-hidden="true" loading="lazy" className={styles.testImage} />
+                  <img src={testIcon} alt="" aria-hidden="true" loading="lazy" className={styles.testImage} />
                   <h3 className={styles.testTitle} >{test.name}</h3>
                 </Link>
               </article>

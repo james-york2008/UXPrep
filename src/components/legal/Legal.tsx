@@ -1,18 +1,18 @@
-import styles from '../../css/Legal.module.css'
+import styles from "../../css/Legal.module.css"
 
 export default function Legal () {
   function handleBackToTop () {
     window.scrollTo({ top: 0 })
-
-    document.body.setAttribute('tabindex', '-1')
+    
+    document.body.setAttribute("tabindex", "-1")
     document.body.focus()
-    document.body.removeAttribute('tabindex')
+    document.body.removeAttribute("tabindex")
   }
 
   return(
-    <footer className={styles.legal} id='legal'>
+    <footer className={styles.legal} id="legal">
       <ul className={styles.footerLinks}>
-        <li><button id='backToTop' aria-label='Back to top' onClick={handleBackToTop} className={styles.backToTop}>Back To Top</button></li>
+        <li><button id="backToTop" aria-label="Back to top" onClick={handleBackToTop} className={styles.backToTop}>Back To Top</button></li>
         <li><a href="https://github.com/james-york2008/UXPrep" target="_blank" rel="noopener noreferrer">View Source Code</a></li>
       </ul>
 
