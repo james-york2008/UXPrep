@@ -13,9 +13,9 @@ export default function App() {
         const timer = setTimeout(() => {
           navigationElement.scrollIntoView()
 
-          navigationElement.setAttribute('tabindex', '-1')
+          navigationElement.setAttribute("tabindex", "-1")
           navigationElement.focus()
-          navigationElement.removeAttribute('tabindex')  
+          navigationElement.removeAttribute("tabindex")  
         }, 100)
         return () => clearTimeout(timer)
       }

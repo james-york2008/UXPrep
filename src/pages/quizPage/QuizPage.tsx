@@ -6,9 +6,9 @@ import ErrorPage from "../errorPage/ErrorPage"
 
 export default function QuizPage() {
   const { quizId } = useParams<{ quizId: string }>()
-  const quizzes = ['htmlCss', 'javascript', 'react', 'accessibility']
+  const quizzes = ["htmlCss", "javascript", "react", "accessibility"]
 
-  if (!quizId || !quizzes.includes(quizId) && quizId !== 'random') {
+  if (!quizId || !quizzes.includes(quizId) && quizId !== "random") {
     return(
       <ErrorPage>Quiz not found</ErrorPage>
     )
