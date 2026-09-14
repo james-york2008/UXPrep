@@ -70,6 +70,10 @@
     margin-bottom: 0.3rem;
 }
 
+.answer:hover {
+    scale: 1.01;
+}
+
 .testType {
     color: rgb(48, 48, 48);
     font-weight: 700;
